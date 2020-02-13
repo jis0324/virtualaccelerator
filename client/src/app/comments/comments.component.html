@@ -1,0 +1,82 @@
+<div class="container">
+  <h3 class="text-center">Comments:</h3>
+  <div *ngFor="let comment of comments">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-2 col-md-3 col-sm-4 avatar_position">
+        <!-- <img src="{{ teamPhoto }}" class="avatar"> -->
+        <div class="group-gap">
+
+          <!-- Upload image -->
+          <div class="avatar-upload">
+            <div class="avatar-preview">
+              <div id="imagePreview" [style.backgroundImage]="'url('+ team_photo +')'">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-8">
+        <div class="card">
+          <div class="card-header" style="color: #333; background-color: #f5f5f5;">
+            <div class="row justify-content-between">
+              <div>
+                <b>{{user.profile.name}}</b>, <span class="text-muted">{{comment.date | date: 'dd/MM/yyyy'}}</span>
+              </div>
+              <div *ngIf="is_coach" style="text-align:right;">
+                <a class="delete" title="delete comment" (click)="delete(comment)"> <i
+                    class="material-icons circle-icon del-comment">clear</i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            {{comment.text}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div *ngIf="!comments?.length && is_team_member" class="text-center">
+    <h6><strong>No comments</strong></h6>
+  </div>
+  <!-- Add comment -->
+  <div *ngIf="is_coach">
+
+    <h6><strong>Add new comment:</strong></h6>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-3 col-sm-4 avatar_position">
+      <!-- <img src="{{ photo }}" class="avatar"> -->
+      <div class="group-gap">
+
+        <!-- Upload image -->
+        <div class="avatar-upload">
+          <div class="avatar-preview">
+            <div id="imagePreview" [style.backgroundImage]="'url('+ coach_photo +')'">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-10">
+        <div class="card">
+          <div class="card-header" style="color: #333; background-color: #f5f5f5;">
+            {{profile.name}}
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()" #commentForm="ngForm">
+              <div>
+                <textarea class="form-control" rows="2" id="text" [(ngModel)]="comment.text" name="text"
+                  placeholder="Add a comment"></textarea>
+              </div>
+              <div style="float: right;">
+                Submit <button type="submit" class="btn btn-circle" style="background-color:#26c6da;"><i
+                    class="material-icons circle-icon">add</i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

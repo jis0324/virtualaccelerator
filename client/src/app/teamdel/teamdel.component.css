@@ -1,0 +1,10 @@
+a {
+color:rgb(127, 140, 141);
+}
+
+a:hover {
+color: #c1e2fc;
+}
+.material-icons {
+  width: 50px;
+}

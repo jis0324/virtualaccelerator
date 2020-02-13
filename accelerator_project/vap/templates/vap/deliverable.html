@@ -1,0 +1,30 @@
+{% extends "vap/base.html" %}
+
+{% block content %}
+<ul class="list-group">
+  <li class="list-group-item">
+    Title: {{ deliverable.title }}
+  </li>
+  <li class="list-group-item">
+    Description: {{ deliverable.description }}
+  </li>
+  <li class="list-group-item">
+    Milestones:
+    <ul>
+      {% for milestone in deliverable.milestone_set.all %}
+        <li>
+          <span>{{ milestone.num }}.{{ milestone.title }}<span>
+          <ul>
+          {% for question in milestone.question_set.all %}
+          <li>
+            <span>{{ question.num }}.{{ question.title }}<span>
+          </li>
+        {% endfor %}
+        </ul>
+        </li>
+      {% endfor %}
+    </ul>
+
+</ul>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+
+<button *ngIf="!is_team_member" (click)="goBack()" type="button" class="btn btn-outline-primary" id="back"><i class="material-icons">keyboard_arrow_left</i> Back </button>
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <app-team-card></app-team-card>
+      </div>
+      <div class="col-lg-12">
+        <app-teamdeliverable></app-teamdeliverable>
+      </div>
+    </div>
+</div>

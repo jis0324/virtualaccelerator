@@ -1,0 +1,34 @@
+<!--Tabs Starts-->
+<section id="tabs">
+  <div class="row text-left">
+    <div class="col-md-12 col-lg-12">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body">
+            <ngb-tabset type="pills" class="ngb-tabset" [orientation]="currentOrientation">
+              <ngb-tab *ngFor="let coachTeam of coachTeams" title="{{coachTeam.name}}">
+                <ng-template ngbTabContent>
+                  <div *ngFor="let teamdeliverable of coachTeam.temp" style="display: flex; align-items: center; height: auto; padding: 20px;">
+                    <p >{{  teamdeliverable.deliverable.title }}</p>
+                    <img *ngIf="teamdeliverable.status" src="../../assets/img/teams/warning.png" class="material-icons"
+                      alt="teamDeliverable.deliverable.title" />
+                    <img *ngIf="!teamdeliverable.status && ! deliverable_color(teamdeliverable.deadline)"
+                      src="../../assets/img/teams/warning.png" class="material-icons"
+                      alt="teamDeliverable.deliverable.title" />
+                    <img *ngIf="!teamdeliverable.status && deliverable_color(teamdeliverable.deadline)"
+                      src="../../assets/img/teams/check.png" class="material-icons "
+                      alt="teamDeliverable.deliverable.title" />
+                    <img src="" alt="">
+                  </div>
+
+                  <p *ngIf="coachTeam.temp.length == 0">This team has not any deliverable yet.</p>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Tabs Starts-->

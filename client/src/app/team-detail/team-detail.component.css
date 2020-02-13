@@ -1,0 +1,36 @@
+.content {
+  margin: 0 15%;
+  margin-top: 30px;
+}
+
+.team_img {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 3px;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.del {
+color:rgb(127, 140, 141);
+}
+
+.del:hover {
+  color: #c1e2fc;
+}
+
+.vl {
+border-left: 1px solid #dee2e6;
+height: 85%;
+position: absolute;
+left: 33%;
+top: 33px;
+}
+
+#back{
+  margin-top:20px;
+  margin-left:20px;
+  padding-left:20px;
+}

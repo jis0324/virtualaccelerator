@@ -1,0 +1,39 @@
+<div class="container">
+  <span [ngSwitch]="isLoggedIn">
+    <span *ngSwitchCase="false">
+      <div class="login">
+        <div class="card card-nav-tabs col-lg-4 col-md-7 col-sm-10">
+          <div class="card-header card-header-rose">
+            <strong>Virtual Accelerator</strong>
+          </div>
+          <div class="card-body">
+            <form class="form-signin">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input #username type="text" id="username" class="form-control" autofocus required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input #password type="password" id="password" class="form-control" required />
+              </div>
+              <div class="text-center">
+                <h6 *ngIf="message" style="color:#d81b60;"><strong>{{message}}</strong></h6>
+                <button (click)="login(username.value, password.value)" class="btn btn-outline-primary"
+                  type="submit">Sign in</button>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer text-muted">
+            <small>Username and password are provided by Administrator. If you forgot your username or password you have
+              to contact us.</small>
+          </div>
+        </div>
+      </div>
+    </span>
+    <span *ngSwitchCase="true">
+      <form class="form-signin">
+        <button (click)="logout()" type="button" class="btn btn-outline-primary btn-block">Logout</button>
+      </form>
+    </span>
+  </span>
+</div>

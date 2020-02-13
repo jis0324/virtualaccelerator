@@ -1,0 +1,28 @@
+{% extends "vap/base.html" %}
+
+{% block content %}
+<h1>Teams</h1>
+{% if available_teams %}
+  <ul class="list-group">
+    {% for team in available_teams %}
+      <li class="list-group-item">
+        <a href= "{% url 'vap:team' team.id %}">{{ team.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No teams are available.</p>
+{% endif %}<br>
+<h1>Deliverables</h1>
+{% if available_deliverables %}
+  <ul class="list-group">
+    {% for deliverable in available_deliverables %}
+      <li class="list-group-item">
+        <a href= "{% url 'vap:deliverable' deliverable.id %}">{{ deliverable.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No deliverables are available.</p>
+{% endif %}
+{% endblock %}

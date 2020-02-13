@@ -1,0 +1,30 @@
+<div *ngIf="is_superuser">
+<a href="dashboard" class="btn btn-outline-primary" id="back" style="margin:20px;"><i class="material-icons">keyboard_arrow_left</i>Back </a>
+<div *ngIf="coaches" class="dashboard_component">
+  <div *ngFor="let coach of coaches" class="coaches-card">
+    <a [routerLink]="['/coach/', coach.user]" style="width: 100%; display: block;">
+      <div class="card">
+        <div class="card-header flex-left">
+            <!-- <img class="img-fluid" src="{{ coach.photo? coach.photo : '../../assets/img/coach.png'}}" alt="Card image cap"> -->
+            <div class="group-gap" style="margin-top: -100px;">
+              <!-- Upload image -->
+              <div class="avatar-upload">
+                <div class="avatar-preview">
+                  <div id="imagePreview" [style.backgroundImage]="'url('+ coach.photo+')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+          <h3><strong *ngIf="coach.phone" style="margin-right: 20px;">{{ coach.hasTeamNum }}</strong>teams</h3>
+        </div>
+        <div class="card-content" style="text-align: right;">
+          <h3  style="margin-top: 0px;">{{coach.name}}</h3>
+        </div>
+        <div class="card-footer" style="border-top: 1px solid #eee;">
+          <div class="stats" style="font-size: 20px;"><strong style="letter-spacing: 3px;">{{ coach.hasCommentNum ? coach.hasCommentNum : '0' }}</strong>&nbsp;&nbsp; feedback open </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>

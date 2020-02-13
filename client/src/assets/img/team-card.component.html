@@ -1,0 +1,105 @@
+<div *ngIf="team">
+  <div class="card card-nav-tabs">
+    <h4 class="card-header card-header-primary user-text click" style="font-weight:500;">
+      <b class="">{{ team.name | uppercase }}</b>
+    </h4>
+    <div class="card-body">
+      <!--Team Information-->
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- <img *ngIf="team.photo" class="team_img" src="{{team.photo}}" alt="{{team.name}}" height="140" width="140"> -->
+          <!-- <img *ngIf="!team.photo" class="team_img" src="../../assets/img/default.jpg" alt="{{team.name}}" height="140" -->
+            <!-- width="140"><br> -->
+
+          <!-- Form starts -->
+          <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="flex-left">
+
+            <div class="group-gap">
+
+              <!-- Upload image -->
+              <div class="avatar-upload">
+                <div class="avatar-edit">
+                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput
+                    (change)="uploadFile($event)" />
+                </div>
+                <div class="avatar-preview">
+                  <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button *ngIf="editTeamDataFlag" type="submit" class="btn btn-danger btn-lg btn-block" (click)="fileInput.click()" style="width: 150px; padding: 10px 20px; margin: 0 auto 30px;">Upload Image</button>
+
+          </form><!-- Form ends -->
+          
+          <div *ngIf="!editTeamDataFlag">
+            <h6><strong>Website:</strong> {{team.website}}</h6>
+            <h6><strong>Pipeline:</strong> {{ team.pipeline }}</h6>
+            <h6><strong>Maturity level:</strong> {{ team.maturity_level }}</h6>
+            <h6><strong>Entry Date:</strong> {{team.date_of_entry | date: 'dd/MM/yyyy'}}</h6>
+            <h6><strong>Coach:</strong> {{ coachOfTeam }}</h6>
+            <div style="float: right;" class="flex-between">
+              <i *ngIf="is_team_member" (click)="editTeamData()" class="icon-pencil material-icons circle-icon teamCard-edit">edit</i>
+            </div>
+          </div>
+          <div *ngIf="is_team_member && editTeamDataFlag">
+            <h6><strong> website: </strong></h6>
+            <input [(ngModel)]="team.website" class="form-control" placeholder="website:">
+            <h6><strong>Pipeline: </strong></h6>
+            <input [(ngModel)]="team.pipeline" class="form-control">
+            <h6><strong>Maturity level: </strong></h6>
+            <select [(ngModel)]="team.maturity_level" class="form-control">
+              <option [ngValue]="20">20</option>
+              <option [ngValue]="40">40</option>
+              <option [ngValue]="60">60</option>
+              <option [ngValue]="80">80</option>
+              <option [ngValue]="100">100</option>
+            </select>
+            <h6><strong>Entry Date: </strong></h6>
+            <input class="form-control" [(ngModel)]="team.date_of_entry" disabled />
+            <h6><strong>Coach: </strong></h6>
+            <input class="form-control" value="{{coachOfTeam}}" disabled />
+            <span id="teammember-npassword-error" style="color: #ff0000; display: block; text-align: center;"></span>
+            <h6><strong>New Password: </strong></h6>
+            <input [(ngModel)]="passwordResetForm.npassword" class="form-control" type="password">
+            <h6><strong>Confirm Password: </strong> </h6>
+            <input [(ngModel)]="passwordResetForm.ncpassword" class="form-control confirm-password" type="password">
+            <div style="float: right;" class="flex-between">
+              <i (click)="updateTeamSubmit()" class="icon-check material-icons circle-icon teamCard-edit">check</i>
+            </div>
+          </div>
+        </div>
+        <div class="vl"></div>
+        <!--Vertical line-->
+
+        <div class="col-lg-8" style="margin-top:20px;">
+          <div *ngIf="is_team_member && !editTeamAboutFlag">
+            <h4>
+              <strong>BIO</strong>
+              <i (click)="editTeamAbout()" class="icon-pencil material-icons circle-icon teamCard-edit">edit</i>
+            </h4>
+            <h5>{{team.about}}</h5>
+          </div>
+          <div *ngIf="is_team_member && editTeamAboutFlag">
+            <h4>
+              <strong>BIO</strong>
+              <i (click)="updateTeamSubmit()" class="icon-check material-icons circle-icon teamCard-edit">check</i>
+            </h4>
+            <h5><textarea [(ngModel)]="team.about" class="form-control">{{team.about}}</textarea></h5>
+          </div>
+          <div *ngIf="!is_team_member">
+            <h4>
+              <strong>BIO</strong>
+            </h4>
+            <h5>{{team.about}}</h5>
+          </div>
+          <!--TEAM MEMBERS-->
+          <h5 class="text-center"><strong>TEAM MEMBERS</strong></h5>
+          <app-team-member [team]="team"></app-team-member>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

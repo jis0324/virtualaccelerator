@@ -1,0 +1,677 @@
+[
+{
+    "model": "vap.team",
+    "pk": 1,
+    "fields": {
+        "name": "hom-e",
+        "photo": "img/1.png",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 2,
+        "date_of_entry": "2019-02-23",
+        "website": "www.hom-e.gr",
+        "coorporate_existance": false,
+        "tag_line": "\u0392\u03c1\u03b5\u03c2 \u03c4\u03bf \u03c3\u03c0\u03af\u03c4\u03b9 \u03c0\u03bf\u03c5 \u03c3\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9!"
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 2,
+    "fields": {
+        "name": "Cargo Share",
+        "photo": "img/3.png",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 4,
+        "date_of_entry": "2019-02-23",
+        "website": "www.cargo.gr",
+        "coorporate_existance": true,
+        "tag_line": "Make love not war!"
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 3,
+    "fields": {
+        "name": "Inagros",
+        "photo": "img/2.png",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 5,
+        "date_of_entry": "2019-02-23",
+        "website": "www.inagros.gr",
+        "coorporate_existance": true,
+        "tag_line": ""
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 4,
+    "fields": {
+        "name": "Book4Share",
+        "photo": "",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 2,
+        "date_of_entry": "2019-02-19",
+        "website": "www.book4share.gr",
+        "coorporate_existance": false,
+        "tag_line": "Read, read, read.."
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 5,
+    "fields": {
+        "name": "yayaka",
+        "photo": "img/yayaka_logo_9fhcMvK.png",
+        "pipeline": "Athens Startup Weekend",
+        "research_stream": false,
+        "maturity_level": 4,
+        "date_of_entry": "2019-02-23",
+        "website": "www.yayaka.gr",
+        "coorporate_existance": false,
+        "tag_line": "\u03a6\u03c1\u03bf\u03bd\u03c4\u03af\u03b6\u03bf\u03c5\u03bc\u03b5 \u03b1\u03c5\u03c4\u03bf\u03cd\u03c2 \u03c0\u03bf\u03c5 \u03bc\u03b1\u03c2 \u03c6\u03c1\u03cc\u03bd\u03c4\u03b9\u03b6\u03b1\u03bd."
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 11,
+    "fields": {
+        "name": "Rollong",
+        "photo": "",
+        "pipeline": "ennovation",
+        "research_stream": false,
+        "maturity_level": 5,
+        "date_of_entry": "2019-02-25",
+        "website": "www.rolling.com",
+        "coorporate_existance": false,
+        "tag_line": ""
+    }
+},
+{
+    "model": "vap.deliverable",
+    "pk": 1,
+    "fields": {
+        "title": "Team Manifesto",
+        "description": "This document is a guideline, which will help to summarise all the team\u2019s vision, goals, expectations and culture. We strongly advise you to carefully go through all points below stated, discussion each one among the team members, before writing down.",
+        "release_date": "2019-02-23",
+        "pipeline": "Ennovation",
+        "template": "deliverables/01_-_Team_Manifesto.docx",
+        "icon": "group"
+    }
+},
+{
+    "model": "vap.deliverable",
+    "pk": 2,
+    "fields": {
+        "title": "Market Validation",
+        "description": "At its heart, market validation is the process of finding out \u2013 before you spend money and time on the business \u2013 whether the market has any space for your idea. If your idea is solving a real problem then is it worth the time, effort, and heartburn.",
+        "release_date": "2019-02-25",
+        "pipeline": "Ennovation",
+        "template": "deliverables/Ennovation_2nd_Phase_Template.docx",
+        "icon": "store"
+    }
+},
+{
+    "model": "vap.deliverable",
+    "pk": 3,
+    "fields": {
+        "title": "Business plan",
+        "description": "A business plan is a written document that describes in detail how a business, usually a new one, is going to achieve its goals. A business plan lays out a written plan from a marketing, financial and operational viewpoint.",
+        "release_date": "2019-02-25",
+        "pipeline": "Ennovation",
+        "template": "deliverables/Business_Plan_HT.pdf",
+        "icon": "feedback"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 1,
+    "fields": {
+        "deliverable": 1,
+        "team": 1,
+        "deadline": "2019-02-18",
+        "status": true,
+        "file": "teamdeliverables/ca86a4d8-009.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 2,
+    "fields": {
+        "deliverable": 2,
+        "team": 3,
+        "deadline": "2019-02-28",
+        "status": true,
+        "file": "teamdeliverables/\u03a0\u03b5\u03c1\u03b9\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03b1_4sze7WH.odt"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 3,
+    "fields": {
+        "deliverable": 3,
+        "team": 1,
+        "deadline": "2019-02-26",
+        "status": true,
+        "file": "teamdeliverables/c93b0910-46f.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 4,
+    "fields": {
+        "deliverable": 1,
+        "team": 2,
+        "deadline": "2019-02-12",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 5,
+    "fields": {
+        "deliverable": 2,
+        "team": 2,
+        "deadline": "2019-02-23",
+        "status": true,
+        "file": "teamdeliverables/01_-_Team_Manifesto_DVfmCo1.docx"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 6,
+    "fields": {
+        "deliverable": 3,
+        "team": 2,
+        "deadline": "2019-03-30",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 7,
+    "fields": {
+        "deliverable": 1,
+        "team": 3,
+        "deadline": "2019-02-23",
+        "status": true,
+        "file": "teamdeliverables/01_-_Team_Manifesto_tTBEsoa.docx"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 8,
+    "fields": {
+        "deliverable": 1,
+        "team": 4,
+        "deadline": "2019-03-01",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 9,
+    "fields": {
+        "deliverable": 2,
+        "team": 4,
+        "deadline": "2019-02-19",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 10,
+    "fields": {
+        "deliverable": 3,
+        "team": 4,
+        "deadline": "2019-02-28",
+        "status": true,
+        "file": "teamdeliverables/01_-_Team_Manifesto.docx"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 11,
+    "fields": {
+        "deliverable": 1,
+        "team": 5,
+        "deadline": "2019-03-30",
+        "status": true,
+        "file": "teamdeliverables/Untitled.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 12,
+    "fields": {
+        "deliverable": 2,
+        "team": 1,
+        "deadline": "2019-03-29",
+        "status": true,
+        "file": "teamdeliverables/44982714-08b.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 13,
+    "fields": {
+        "deliverable": 2,
+        "team": 5,
+        "deadline": "2019-03-30",
+        "status": true,
+        "file": "teamdeliverables/0d9bff92-643.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 14,
+    "fields": {
+        "deliverable": 3,
+        "team": 5,
+        "deadline": "2019-02-24",
+        "status": true,
+        "file": "teamdeliverables/f6d78864-e29.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 15,
+    "fields": {
+        "deliverable": 3,
+        "team": 3,
+        "deadline": "2019-03-21",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 24,
+    "fields": {
+        "deliverable": 1,
+        "team": 11,
+        "deadline": "2019-02-25",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 25,
+    "fields": {
+        "deliverable": 2,
+        "team": 11,
+        "deadline": "2019-02-26",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 26,
+    "fields": {
+        "deliverable": 3,
+        "team": 11,
+        "deadline": "2019-02-27",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 1,
+    "fields": {
+        "teamdeliverable": 1,
+        "coach": 3,
+        "text": "Excellent work! Well done guys!",
+        "date": "2019-02-20"
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 2,
+    "fields": {
+        "teamdeliverable": 2,
+        "coach": 3,
+        "text": "You have to make further research.",
+        "date": "2019-02-20"
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 4,
+    "fields": {
+        "teamdeliverable": 1,
+        "coach": 4,
+        "text": "Good!",
+        "date": "2019-02-21"
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 20,
+    "fields": {
+        "teamdeliverable": 4,
+        "coach": 4,
+        "text": "Do you need any help?",
+        "date": "2019-02-25"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$NDPKZfDqWTCL$usKlHQAFMEaFVO3W6RdQENZRPvxkAhpwhGi4SzFzwFA=",
+        "last_login": "2019-02-19T18:21:58.975Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "kmpatziakoudi@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-11-19T18:13:03.554Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$HQ1h7Bgfsta0$ATIuTyG1mXOc/ICpOlvm0xebGV3WvreiKszEwsIu0Fg=",
+        "last_login": "2019-02-19T16:59:00.307Z",
+        "is_superuser": false,
+        "username": "katerina",
+        "first_name": "Katerina",
+        "last_name": "Mpatziakoudi",
+        "email": "kmpatziakoudi@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-17T14:48:10Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$ViKKhWxuMfS5$fmKyjUa7lcTO+yUzvmyr999kWdw/BQvGlX08/nGz7ss=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "akaragiannaki",
+        "first_name": "Angeliki",
+        "last_name": "Karagiannaki",
+        "email": "akaragiannaki@aueb.gr",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:17:44Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$1QmJJl8iazZC$qOQ0nqaKvUtLRLGNveJ+HCSfbhF4ivNQFGWQZtX/gws=",
+        "last_login": "2019-02-19T15:09:09.270Z",
+        "is_superuser": false,
+        "username": "mgalani",
+        "first_name": "Marianna",
+        "last_name": "Galani",
+        "email": "mgalani@aueb.gr",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:20:40Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$XoBcN4N3eCGU$Um9L8kgrFv9zFwOwtpFN8BQlEuxk7Pa1a1j/85WS1qw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "spetropoulos",
+        "first_name": "Stefanos",
+        "last_name": "Petropoulos",
+        "email": "spetropoulos@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:21:47Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$I1iLzdCA1vd5$lUVjqUM3q7iQC4ug4ubWQaPmAaIb+o/91hQHsbdueJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "tanogeianaki",
+        "first_name": "Theonymphi",
+        "last_name": "Anogeianaki",
+        "email": "tanogeianaki@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:23:25Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$Iwc6bqL0zP3m$uE+LiV7WaGPahs0FnxaIVUk1NNVbs0ukRXpgD4bxAdQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "cfragkedaki",
+        "first_name": "Claire",
+        "last_name": "Fragkedaki",
+        "email": "cfragkedaki@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:25:02Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$sp4ZKjzGgAnR$x7OipQ3aiuDT6TxdaIMHTsXsodcOHLXINRI/HXn10mo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jbatas",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-19T18:24:23Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "24uoedvwdegb0dcrwhjp39zokxkzt8hu",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-03T18:13:47.842Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "458kzqz7hm8uoipegjxc9xmvj0awp64f",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-23T15:36:06.690Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "63cmnfcxht793atia1vjpwt8ywq79b2n",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-20T21:52:06.611Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dor79ls17wszo5l9eup76aex1smyafnb",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2019-01-15T15:01:35.800Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qyvedspty64l3czm8cfneubu9p8b9lb4",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2019-03-05T18:21:58.991Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yfl6c0g3fqmlxneqs6g9nqc8xx1p30b8",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-20T21:52:06.803Z"
+    }
+},
+
+{
+    "model": "vap.teammember",
+    "pk": 2,
+    "fields": {
+        "user_ptr": 2,
+        "team": 1,
+        "role": "Developer",
+        "field": "Technology"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 6,
+    "fields": {
+        "user_ptr": 6,
+        "team": 1,
+        "role": "Developer",
+        "field": "Technology"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 7,
+    "fields": {
+        "user_ptr": 7,
+        "team": 1,
+        "role": "Developer",
+        "field": "Technology"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 8,
+    "fields": {
+        "user_ptr": 8,
+        "team": 5,
+        "role": "",
+        "field": ""
+    }
+},
+{
+    "model": "vap.coach",
+    "pk": 3,
+    "fields": {
+        "user_ptr": 3,
+        "job_title": "",
+        "organization": "ACEin",
+        "field": "Innovation"
+    }
+},
+{
+    "model": "vap.coach",
+    "pk": 4,
+    "fields": {
+        "user_ptr": 4,
+        "job_title": "Communication Manager",
+        "organization": "ACEin",
+        "field": "Innovation"
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 2,
+    "fields": {
+        "name": "Katerina Mpatziakoudi",
+        "email": "kmpatziakoudi@gmail.com",
+        "phone": "6976665375",
+        "is_coach": false,
+        "is_team_member": true
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 3,
+    "fields": {
+        "name": "Angeliki Karagiannaki",
+        "email": "akaragiannaki@aueb.gr",
+        "phone": "6978885624",
+        "is_coach": true,
+        "is_team_member": false
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 4,
+    "fields": {
+        "name": "Marianna Galani",
+        "email": "mgalani@aueb.gr",
+        "phone": "6987291089",
+        "is_coach": true,
+        "is_team_member": false
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 6,
+    "fields": {
+        "name": "Theonymphi Anogeianaki",
+        "email": "tanogeianaki@gmail.com",
+        "phone": "6987291078",
+        "is_coach": false,
+        "is_team_member": true
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 7,
+    "fields": {
+        "name": "Kleio Fragkedaki",
+        "email": "cfragkedaki@gmail.com",
+        "phone": "69476578787",
+        "is_coach": false,
+        "is_team_member": true
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 8,
+    "fields": {
+        "name": "John Batas",
+        "email": "jbatas@gmail.com",
+        "phone": "687568970",
+        "is_coach": false,
+        "is_team_member": true
+    }
+}
+]

@@ -1,0 +1,44 @@
+<div class="team_members">
+  <div *ngFor="let teamMember of teamMembers">
+    <div class="row">
+      <div class="col-lg-3 avatar_position">
+        <img src="../../assets/img/user.png" class="avatar">
+      </div>
+      <div class="col-lg-9 row member-desc">
+        <div class ="col-lg-9" style="display: flex;">
+          <h6 style="margin: 0 10px;">
+            <strong>Name:</strong>
+            <span *ngIf="teamMember!==editTeamMember">{{teamMember.name}}</span>,        
+            <input *ngIf="teamMember===editTeamMember" [(ngModel)]="editTeamMember.name" class="form-control">
+          </h6>
+          <h6  style="margin: 0 10px;">
+              <strong>role:</strong>
+              <span *ngIf="teamMember!==editTeamMember">{{teamMember.role}}</span>
+              <input *ngIf="teamMember===editTeamMember" [(ngModel)]="editTeamMember.role" class="form-control">
+          </h6>
+          <!-- <h6> -->
+            <!-- <strong>Phone:</strong> -->
+            <!-- <span *ngIf="teamMember!==editTeamMember">{{teamMember.phone}}</span> -->
+            <!-- <input *ngIf="teamMember===editTeamMember" [(ngModel)]="teamMember.phone" class="form-control"> -->
+          <!-- </h6> -->
+        </div>
+        <div class="col-lg-3 row" *ngIf="is_team_member">
+          <i  *ngIf="teamMember===editTeamMember" title="Save team member"(click)="update()" class="icon-check material-icons circle-icon teamCard-edit">done</i>
+          <i *ngIf="teamMember!==editTeamMember" title="Edit team member" (click)="edit(teamMember)" class="icon-pencil material-icons circle-icon teamCard-edit">edit</i>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div *ngIf="!teamMembers?.length" class="text-center">
+    <h6>This team hasn't got any member yet. Team members are added only by the team.</h6>
+  </div>
+  <div *ngIf="addMemberFlag" style="display: flex;">
+    <input [(ngModel)]="addTeamMember.name" class="form-control" placeholder="name" style="margin: 0 20px;">
+    <input [(ngModel)]="addTeamMember.role" class="form-control" placeholder="role" style="margin: 0 20px;">
+    <i (click)="create()" class="icon-check material-icons circle-icon teamCard-edit">done</i>
+  </div>
+  <div class="text-center" *ngIf="is_team_member">
+    <button type="button" class="btn btn-outline-primary" (click)="addmember()" style="padding: 10px 20px;"> add member </button>
+  </div>
+</div>

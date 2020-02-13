@@ -1,0 +1,31 @@
+<div >
+  <div class="card card-nav-tabs">
+    <h4 class="card-header card-header-primary user-text click" style="font-weight:500;">
+      <b class="">TEAMS DELIVERABLES</b>
+    </h4>
+    <div class="card-body">
+      <!--Team Information-->
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div >
+            <table class="table col-10">
+                <tbody>
+                    <tr *ngFor = "let teamDeliverable of teamDeliverables">
+                        <td><a [routerLink]="['/../teams/', teamDeliverable.team.id, 'teamdeliverables', teamDeliverable.id]" class="bold">
+                          <i *ngIf="teamDeliverable.status" class="material-icons circle-icon del_success" >{{teamDeliverable.deliverable.icon}}</i>
+                          <i *ngIf="!teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)" class="material-icons circle-icon del_danger" >{{teamDeliverable.deliverable.icon}}</i>
+                          <i *ngIf="!teamDeliverable.status && deliverable_color(teamDeliverable.deadline)" class="material-icons circle-icon" >{{teamDeliverable.deliverable.icon}}</i>
+                          </a></td>
+                        <td><a [routerLink]="['/../teams/', teamDeliverable.team.id, 'teamdeliverables', teamDeliverable.id]" class="bold">
+                          <h6>{{teamDeliverable.deliverable.title}}</h6></a></td>
+                        <td> <a [routerLink]="['/../teams/', teamDeliverable.team.id]"><h6>{{teamDeliverable.team.name}}</h6></a></td>
+                        <td><h6>{{teamDeliverable.deadline | date: 'dd/MM/yyyy'}}</h6></td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

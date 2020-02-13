@@ -1,0 +1,23 @@
+<div id="search-component">
+
+  <ng-template #rt let-r="result" let-t="term">
+    <ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
+  </ng-template>
+
+
+  <input id="search-box"
+         type="text"
+         class="form-control"
+         [class.alert-warning]="searchFailed"
+         (selectItem)="selectedItem($event)"
+         [(ngModel)]="model"
+         [ngbTypeahead]="search"
+         [resultTemplate]="rt"
+         [inputFormatter]="formatter"
+         placeholder="Search.."/>
+
+  <span *ngIf="searching">searching...</span>
+  <div class="alert alert-warning" *ngIf="searchFailed">
+    Sorry, suggestions could not be loaded.
+  </div>
+</div>

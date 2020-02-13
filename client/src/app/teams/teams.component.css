@@ -1,0 +1,151 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.teams_component{
+  margin-top: 20px;
+}
+
+.teams{
+  margin-top: 50px;
+}
+
+.bar-position {
+  margin-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.team_name {
+  text-align: left !important;
+  color: rgb(127, 140, 141);
+  font-family: 'Lato', Tahoma, Geneva, sans-serif;
+}
+
+.team_card_icon {
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: -35px;
+  margin-right: 15px;
+  float: left;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+}
+
+.team_card_img {
+  width:100px;
+  height:100px;
+  background-color:white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+a {
+color:rgb(127, 140, 141);
+}
+
+a:hover {
+color: #c1e2fc;
+}
+
+.circle-icon {
+background: grey;
+color:white;
+border-radius: 50%;
+text-align: center;
+vertical-align: middle;
+padding: 10px;
+}
+
+.check-input {
+  margin: 0;
+  left: 0;
+  right: 5px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+.team-label {
+  text-align:left;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 20px;
+}
+.card-header {
+  padding: 1.5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  background-color: transparent;
+}
+.card-header h4.card-title {
+  text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    margin-bottom: 20px;
+}
+.card-img {
+  position: relative;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none
+}
+.card .btn-floating {
+  width: inherit;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 56px;
+  width: 56px;
+  height: 56px;
+
+}
+.ft-plus:before {
+  /* content: "\e99d"; */
+}
+[class*=" ft-"], [class^=ft-] {
+  font-family: feather!important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-header button {
+  margin-top: -10px;
+}
+.btn-green {
+  background-color: green;
+}
+.btn-grey {
+  background-color: grey;
+}

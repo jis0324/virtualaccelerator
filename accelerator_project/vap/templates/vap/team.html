@@ -1,0 +1,30 @@
+{% extends "vap/base.html" %}
+
+{% block content %}
+<ul class="list-group">
+  <li class="list-group-item">
+    Name: {{ team.name }}
+  </li>
+  <li class="list-group-item">
+    Team Members:
+    <ul>
+      {% for teammember in team.teammember_set.all %}
+        <li>
+          <span>{{ teammember.name }}<span>
+        </li>
+      {% endfor %}
+    </ul>
+  <li class="list-group-item">
+    Coach:
+    <ul>
+      {% for coach in team.coaches.all %}
+        <li>
+          <a href="{% url 'vap:coach' coach.id %}">{{ coach.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  <li class="list-group-item">
+    Pipeline: {{ team.pipeline }}
+  </li>
+</ul>
+{% endblock %}

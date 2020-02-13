@@ -1,0 +1,225 @@
+<!--Vertical Timeline Starts-->
+<section id="timeline" class="timeline-center timeline-wrapper">
+  <ul class="timeline">
+    <li class="timeline-line"></li>
+  </ul>
+  <ul class="timeline">
+    <li class="timeline-line"></li>
+    <li *ngFor="let teamDeliverable of teamDeliverables; let i = index; let odd = odd; let even = even"
+      [ngStyle]="{'margin': getstyle(i)}" class="timeline-item" style="padding-bottom:0;">
+      <div class="timeline-badge">
+        <h6>
+          <a class="bold">
+            <i *ngIf="teamDeliverable.status" class="fas fa-exclamation material-icons circle-icon"
+              style="width: 44px;"></i>
+            <i *ngIf="!teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="fas fa-exclamation material-icons circle-icon" style="width: 44px;"></i>
+            <i *ngIf="!teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="material-icons circle-icon del_success">check</i>
+          </a>
+        </h6>
+      </div>
+      <div *ngIf="getEvenOrOdd(i) === 'odd'" class="timeline-card card border-grey border-lighten-2"
+        style="padding: 0px 30px;">
+        <div class="card-header" style="text-align: right;">
+          <h4 class="card-title mb-0">
+            <a *ngIf="is_superuser">
+              {{teamDeliverable.deliverable.title}}
+            </a>
+            <a *ngIf="!is_superuser" [routerLink]="['teamdeliverables/', teamDeliverable.id]">
+              <i *ngIf="!is_superuser"
+                class="icon-pencil material-icons circle-icon deliverable-edit">edit</i>{{teamDeliverable.deliverable.title}}
+            </a>
+          </h4>
+          <div class="list-inline mb-1">
+            <span *ngIf="is_coach" class="pr-1"><a class="primary" href="{{getTeamDeliverablePath(teamDeliverable.file)}}"
+                download="teamDeliverable of {{ team.name }} for {{ teamDeliverable.deliverable.title }} course.pdf" target="blank">{{ getTeamDeliverableName(teamDeliverable.file)}}<i *ngIf="teamDeliverable.file"
+                  class="fa fa-download material-icons circle-icon deliverable-edit"></i></a>
+            </span>
+            <span *ngIf="!is_coach" class="pr-1"><a class="primary">{{ getTeamDeliverableName(teamDeliverable.file)}}<i   *ngIf="teamDeliverable.file" class="fa fa-download material-icons circle-icon deliverable-edit"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-content">
+            <!-- For superuser -->
+            <div *ngIf="is_superuser && !teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <span>Deliverable is not yet uploaded</span>
+            </div>
+            <div *ngIf="is_superuser && !teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <span>Team has delayed to submit feedback {{ getTimeDifference(teamDeliverable.deadline) }}days</span>
+            </div>
+            <div *ngIf="is_superuser && teamDeliverable.status && deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">coach has not given feedback yet</span>
+            </div>
+            <div *ngIf="is_superuser && teamDeliverable.status && !deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">Coach has delayed to submit feedback
+                {{getTimeDifference_10(teamDeliverable.deadline)}} days</span>
+            </div>
+            <!-- for coach. -->
+            <div *ngIf="is_coach && !teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <span>Deliverable is not yet uploaded</span>
+            </div>
+            <div *ngIf="is_coach && !teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <span>Team has delayed to submit feedback {{ getTimeDifference(teamDeliverable.deadline) }} days. Please
+                wait.</span>
+            </div>
+            <div *ngIf="is_coach && teamDeliverable.status && deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">Team has submitted deliverable. You can proceed to feedback!</span>
+            </div>
+            <div *ngIf="is_coach && teamDeliverable.status && !deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">You have late {{ getTimeDifference_10(teamDeliverable.deadline) }}
+                days to submit your feedback. Please proceed with feedback</span>
+            </div>
+            <!--for team -->
+            <div *ngIf="is_team_member && !teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <span *ngIf="!teamDeliverable.comment">You have {{getTimeDifference(teamDeliverable.deadline)}} days to
+                submit your deliverable</span>
+            </div>
+            <div *ngIf="is_team_member && !teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <span *ngIf="!teamDeliverable.comment">You have late {{getTimeDifference(teamDeliverable.deadline)}} days
+                to submit your deliverable. Please submit your deliverable</span>
+            </div>
+            <div *ngIf="is_team_member && teamDeliverable.status && deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">You have submitted your deliverable. Please wait for your
+                feedback!</span>
+            </div>
+            <div *ngIf="is_team_member && teamDeliverable.status && !deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body" style="text-align: right;">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">Coach has delayed to submit feedback
+                {{getTimeDifference_10(teamDeliverable.deadline)}} days. Please wait.</span>
+            </div>
+          </div>
+
+          <h6 *ngIf="teamDeliverable.status" style="padding-right: 20px; text-align: right;">Submited!</h6>
+          <h6 *ngIf="!teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+            style="padding-right: 20px; text-align: right;">Deadline is passed!</h6>
+          <h6 *ngIf="!teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+            style="padding-right: 20px; text-align: right;">Deadline:
+            {{teamDeliverable.deadline | date: 'dd/MM/yyyy'}}</h6>
+        </div>
+      </div>
+      <div *ngIf="getEvenOrOdd(i)=== 'even'" class="timeline-card card border-grey border-lighten-2"
+        style="padding: 0px 30px;">
+        <div class="card-header">
+          <h4 class="card-title mb-0">
+            <a *ngIf="is_superuser">
+              {{teamDeliverable.deliverable.title}}
+            </a>
+            <a *ngIf="!is_superuser"
+              [routerLink]="['teamdeliverables/', teamDeliverable.id]">{{teamDeliverable.deliverable.title}}<i
+                *ngIf="!is_superuser" class="icon-pencil material-icons circle-icon  deliverable-edit">edit</i>
+            </a>
+          </h4>
+          <div *ngIf="teamDeliverable.file" class="list-inline mb-1">
+            <span *ngIf="is_coach" class="pr-1">
+              <a class="primary" href="{{ getTeamDeliverablePath(teamDeliverable.file) }}" download="teamDeliverable of {{ team.name }} for {{ teamDeliverable.deliverable.title }} course.pdf" target="blank">{{ getTeamDeliverableName(teamDeliverable.file)}}
+                <i *ngIf="teamDeliverable.file"
+                  class="fa fa-download material-icons circle-icon deliverable-edit"></i></a>
+            </span>
+            <span *ngIf="!is_coach" class="pr-1">
+              <a class="primary"><i *ngIf="teamDeliverable.file"
+                  class="fa fa-download material-icons circle-icon deliverable-edit"></i>{{ getTeamDeliverableName(teamDeliverable.file)}}</a>
+            </span>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-content">
+            <!-- For superuser -->
+            <div *ngIf="is_superuser && !teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="card-body">
+              <span>Deliverable is not yet uploaded</span>
+            </div>
+            <div *ngIf="is_superuser && !teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="card-body">
+              <span>Team has delayed to submit feedback {{ getTimeDifference(teamDeliverable.deadline) }}days</span>
+            </div>
+            <div *ngIf="is_superuser && teamDeliverable.status && deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">coach has not given feedback yet</span>
+            </div>
+            <div *ngIf="is_superuser && teamDeliverable.status && !deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">Coach has delayed to submit feedback
+                {{getTimeDifference_10(teamDeliverable.deadline)}} days</span>
+            </div>
+            <!-- for coach. -->
+            <div *ngIf="is_coach && !teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="card-body">
+              <span>Deliverable is not yet uploaded</span>
+            </div>
+            <div *ngIf="is_coach && !teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="card-body">
+              <span>Team has delayed to submit feedback {{ getTimeDifference(teamDeliverable.deadline) }} days. Please
+                wait.</span>
+            </div>
+            <div *ngIf="is_coach && teamDeliverable.status && deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">Team has submitted deliverable. You can proceed to feedback!</span>
+            </div>
+            <div *ngIf="is_coach && teamDeliverable.status && !deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">You have late {{ getTimeDifference_10(teamDeliverable.deadline) }}
+                days to submit your feedback. Please proceed with feedback</span>
+            </div>
+            <!--for team -->
+            <div *ngIf="is_team_member && !teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+              class="card-body">
+              <span *ngIf="!teamDeliverable.comment">You have {{getTimeDifference(teamDeliverable.deadline)}} days to
+                submit your deliverable</span>
+            </div>
+            <div *ngIf="is_team_member && !teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+              class="card-body">
+              <span *ngIf="!teamDeliverable.comment">You have late {{getTimeDifference(teamDeliverable.deadline)}} days
+                to submit your deliverable. Please submit your deliverable</span>
+            </div>
+            <div *ngIf="is_team_member && teamDeliverable.status && deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">You have submitted your deliverable. Please wait for your
+                feedback!</span>
+            </div>
+            <div *ngIf="is_team_member && teamDeliverable.status && !deliverable_color_10(teamDeliverable.deadline)"
+              class="card-body">
+              <div *ngIf="teamDeliverable.comment">{{ teamDeliverable.comment }}</div>
+              <span *ngIf="!teamDeliverable.comment">Coach has delayed to submit feedback
+                {{getTimeDifference_10(teamDeliverable.deadline)}} days. Please wait.</span>
+            </div>
+          </div>
+        </div>
+        <h6 *ngIf="teamDeliverable.status" style="padding-left: 20px; text-align: left;">Submited!</h6>
+        <h6 *ngIf="!teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)"
+          style="padding-left: 20px; text-align: left;">Deadline is passed!</h6>
+        <h6 *ngIf="!teamDeliverable.status && deliverable_color(teamDeliverable.deadline)"
+          style="padding-left: 20px; text-align: left;">Deadline:
+          {{teamDeliverable.deadline | date: 'dd/MM/yyyy'}}</h6>
+      </div>
+    </li>
+  </ul>
+  <h3 *ngIf="!teamDeliverables?.length" class="page-title text-center">This team hasn't got any deliverable yet.</h3>
+  <!-- <div class="text-center" *ngIf="teamDeliverables?.length < deliverables?.length"> -->
+  <!-- <button type="button" class="btn btn-outline-primary" (click)="open(content)"> Add new Deliverable </button> -->
+  <!-- </div> -->
+</section>
+<!--Vertical Timeline Ends-->

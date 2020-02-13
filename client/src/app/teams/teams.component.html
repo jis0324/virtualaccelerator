@@ -1,0 +1,103 @@
+<div class="teams_component">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a *ngIf="is_superuser" href="dashboard" class="btn btn-outline-primary" id="back"><i
+          class="material-icons">keyboard_arrow_left</i>Back </a>
+      <!-- <button *ngIf="is_superuser" type="button" class="btn btn-outline-primary" (click)="open(content)"> Add Team </button> -->
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" routerLinkActive="active">
+            <app-team-search></app-team-search>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="teams">
+      <div class="row">
+        <div *ngFor="let team of teams" class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header flex-between">
+              <a [routerLink]="['/teams/', team.id]">
+                <h4 class="card-title">{{ team.name | uppercase}}</h4>
+              </a>
+              <button *ngIf="is_superuser" class="delete" title="delete team" type="button" class="btn btn-link"
+                (click)="delete(team)" style="cursor: pointer;">x</button>
+            </div>
+            <div class="card-content">
+              <div class="card-img">
+                <img class="img-fluid " src="{{team.photo}}" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <app-teamdel [team]="team.id"></app-teamdel>
+              </div>
+            </div>
+            <div class="card-footer" style="border-top: 1px solid #eee;">
+              <div class="stats">
+                <i class="material-icons">category</i> {{ team.pipeline | uppercase }}
+              </div>
+              <div class="stats">MATURITY LEVEL: {{ team.maturity_level }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add new team</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <form (ngSubmit)="onSubmit()" #teamForm="ngForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" [(ngModel)]="team.name" name="name"
+              placeholder="Team Name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="website" [(ngModel)]="team.website" name="website"
+              placeholder="www.website.com" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="pipeline" [(ngModel)]="team.pipeline" name="pipeline"
+              placeholder="Pipeline" required>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="maturity_level" [(ngModel)]="team.maturity_level"
+              name="maturity_level" placeholder="Maturity Level" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" id="tag_line" [(ngModel)]="team.tag_line" name="tag_line"
+              placeholder="What is the tagline of the team?">
+              </textarea>
+          </div>
+          <div class="form-check">
+            <label for="research_stream" class="form-check-label">Research stream</label>
+            <input type="checkbox" class="check-input" id="research_stream" [(ngModel)]="team.research_stream"
+              name="research_stream">
+          </div>
+          <div class="form-check">
+            <label for="coorporate_existance" class="form-check-label">Coorporate existance</label>
+            <input type="checkbox" class="check-input" id="coorporate_existance" [(ngModel)]="team.coorporate_existance"
+              name="coorporate_existance">
+          </div>
+          <div class="text-center">
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ng-template>

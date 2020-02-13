@@ -1,0 +1,103 @@
+<button (click)="goBack()" type="button" class="btn btn-outline-primary" id="back"><i
+    class="material-icons">keyboard_arrow_left</i>Back </button>
+<div *ngIf="teamdeliverable" class="content" id="teamdeliverable">
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="card card-nav-tabs" id="del_card">
+        <h4 class="card-header card-header-warning user-text click" style="font-weight:500;">
+          <b class="">{{ teamdeliverable.deliverable.title | uppercase}}</b>
+        </h4>
+        <div class="card-body row">
+          <div class="col-6">
+            <br>
+            <div class="text-center" *ngIf="is_team_member">
+              <h6 *ngIf="message"><b class="bold">{{message}}</b></h6>
+              <h6><b class="bold">Upload a PDF file:</b></h6>
+              <div>
+                <span class="btn btn-outline-primary btn-file">
+                  Upload <input name="imageUrl" type="file" accept="application/pdf"
+                    (change)="handleInputChange($event)">
+                </span>
+              </div>
+              <div *ngFor="let file of files">
+                <h6>{{file.name}}</h6>
+                <div class="row justify-content-center">
+                  <button class="clear" (click)="clear()" class="btn btn-circle" style="background-color:#ff0066;"><i
+                      class="material-icons circle-icon">clear</i></button>
+                  <button (click)="save()" class="btn btn-circle" style="background-color:#00cc99;"><i
+                      class="material-icons circle-icon">done</i></button>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <table class="table col-10">
+              <tbody>
+                <tr>
+                  <td>
+                    <h6><b class="bold">Template: </b></h6>
+                  </td>
+                <td *ngIf="teamdeliverable.deliverable.template"><a href="{{ templatePath }}"  download="template for {{ teamdeliverable.deliverable.title }} course.pdf" target="blank">
+                    <img src="../../assets/img/download-cloud-flat.png" class="material-icons" alt="" style="width: 25px;">
+                    <!-- <i class="material-icons circle-icon">arrow_downward</i> -->
+                    {{templateName}}</a></td>
+                  <td *ngIf="!teamdeliverable.deliverable.template"><a style="color: #777777;">There is no a Template</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6><b class="bold">Deadline: </b></h6>
+                  </td>
+                  <td *ngIf="!isEmptyObject(teamdeliverable.deadline)">
+                    <h6>{{teamdeliverable.deadline | date: 'dd/MM/yyyy'}}</h6>
+                  </td>
+                  <td *ngIf="isEmptyObject(teamdeliverable.deadline)">
+                    <h6>Aknown</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6><b class="bold">Status: </b></h6>
+                  </td>
+                  <td *ngIf="teamdeliverable.status">
+                    <h6>Submited!</h6>
+                  </td>
+                  <td *ngIf="!deadline_status(teamdeliverable.deadline) && !teamdeliverable.status">
+                    <h6 style="color:#ff0066">Deadline is passed!</h6>
+                  </td>
+                  <td *ngIf="!teamdeliverable.status && deadline_status(teamdeliverable.deadline)">
+                    <h6>Nothing has been submited yet</h6>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6><b class="bold">File: </b></h6>
+                  </td>
+                  <td *ngIf="teamdeliverable.status">
+                  <a *ngIf="is_coach && teamDeliverableName" href="{{ teamDeliverablePath }}" download="teamDeliverable of {{ team.name }} for {{ teamdeliverable.deliverable.title }} course.pdf" target="blank">
+                      <img src="../../assets/img/download-cloud-flat.png" class="material-icons" alt="" style="width: 25px;">
+                      <!-- <i class="material-icons circle-icon">arrow_downward</i> -->
+                      {{teamDeliverableName}}</a>
+                    <a *ngIf="!is_coach && teamDeliverableName">
+                      <!-- <i class="material-icons circle-icon">arrow_downward</i> -->
+                      <img src="../../assets/img/download-cloud-flat.png" class="material-icons" alt="" style="width: 25px;">
+                      {{teamDeliverableName}}
+                      </a>
+                  </td>
+                  <td *ngIf="!teamdeliverable.status">
+                    <h6>Nothing has been submited yet</h6>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="vl"></div>
+          <div class="col-6">
+            <!-- Comments -->
+            <app-comments [teamId]="teamdeliverable.team"></app-comments>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

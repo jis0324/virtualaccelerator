@@ -1,0 +1,125 @@
+<section class="cd-horizontal-timeline" [ngClass]="{'loaded': loaded}">
+  <div class="timeline">
+    <div class="events-wrapper">
+      <div class="events" #eventsWrapper [style.width.px]="eventsWrapperWidth">
+        <ol>
+          <li *ngFor="let item of timelineElements; let index = index;">
+            <span></span>
+            <a #timelineEvents href="#" class="step-btn" id="{{'step_btn_'+index}}"
+              [ngClass]="{'selected': item.selected, 'older-event': index < selectedIndex}"
+              (click)="onEventClick($event, item)" style="bottom: -15px;">
+              <p class="step-num">{{ index + 1 }}</p>
+            </a>
+          </li>
+        </ol>
+        <span class="filling-line" aria-hidden="true" #fillingLine></span>
+      </div>
+    </div>
+    <ul class="cd-timeline-navigation">
+      <!-- <li>
+        <a href="#" (click)="onEventClick($event, false)" class="prev"
+          [ngClass]="{'inactive':prevLinkInactive}">Prev</a>
+      </li>
+      <li>
+        <a href="#" (click)="onEventClick($event, true)" class="next" [ngClass]="{'inactive':nextLinkInactive}">Next</a>
+      </li> -->
+    </ul>
+  </div>
+
+  <div class="events-content" *ngIf="showContent">
+      <ol *ngIf="showContent">
+        <li *ngFor="let item of timelineElements; let index = index"
+          [@contentState]="item.selected ? 'active' : (index < selectedIndex ? 'left' : 'right')">
+          <h2 class="text-bold-100" style="text-align: center;">{{ item.title }}</h2>
+          <div class="instruction">
+            <p>INSTRUCTIONS:</p>
+            <textarea *ngIf="is_superuser" [(ngModel)]="course.description" name="instructions" class="form-control"
+              rows="3" style="display: block; width: 100%;"></textarea>
+            <textarea *ngIf="!is_superuser" name="instructions" class="form-control" rows="3"
+              style="display: block; width: 100%;" disabled>{{ course.description }}</textarea>
+          </div>
+          <div class="template flex-left">
+            <p>TEMPLATE:</p>
+            <div *ngIf="is_superuser" class="custom-file  mx-auto d-block">
+              <input class="custom-file-input" id="deliverableTemplate" name="template" accept="application/pdf"
+                (change)="handleInputChange($event)" type="file">
+
+              <label *ngIf="course.template" class="custom-file-label" for="deliverableTemplate">{{ templateName }}</label>
+              <label *ngIf="!course.template" class="custom-file-label" for="deliverableTemplate">Choose Template File.</label>
+            </div>
+            <div *ngIf="!is_superuser" class="custom-file  mx-auto d-block">
+              <h5><a href="{{ templatePath }}" download="template for {{ course.title }} course.pdf">{{ templateName }}</a></h5>
+            </div>
+          </div>
+          <div *ngIf="false" class="deliverable flex-left">
+            <p>DELIVERABLE:</p>
+            <div class="custom-file  mx-auto d-block">
+              <input class="custom-file-input" accept="application/pdf" (change)="teamDeliverableHandleInputChange($event)" id="teamDeliverable" type="file">
+              <label *ngIf="file" class="custom-file-label" for="teamDeliverable">{{ file.name }}</label>
+              <label *ngIf="!file" class="custom-file-label" for="teamDeliverable">Choose TeamDelvierable File.</label>
+            </div>
+            <div *ngFor="let file of files">
+              <div class="row justify-content-center">
+                <button class="clear" (click)="clear()" class="btn btn-circle" style="background-color:#ff0066;"><i
+                    class="material-icons circle-icon">clear</i></button>
+                <button (click)="save()" class="btn btn-circle" style="background-color:#00cc99;"><i
+                    class="material-icons circle-icon">done</i></button>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="false" class="deliverable flex-left">
+            <p>DELIVERABLE:</p>
+            <div *ngFor="let teamDeliverable of teamDeliverablesForCoach" class="custom-file  mx-auto d-block flex-left">
+              <strong>{{ teamDeliverable.team.name }}:   </strong><a href="{{ teamDeliverable.file }}" download>{{ teamDeliverable.file }} </a>
+            </div>
+          </div>
+          <div *ngIf="is_superuser" class="help_material">
+            <p>HELPFUL MATERIAL:</p>
+            <table class="table table-responsive">
+              <tr>
+                <td width="900">
+                  <input id="{{'newLink' + index}}" name="link" [(ngModel)]="link.link"
+                    class="form-control ng-pristine ng-valid ng-touched">
+                </td>
+                <td>
+                  <a class="new-material" (click)='new_material(course.id)'><i class="fa fa-check"></i></a>
+                </td>
+                <td>
+                  <a class="cancel-material" (click)='cancel_material()'><i class="fa fa-times"></i></a>
+                </td>
+              </tr>
+              <tr *ngFor="let oldlink of oldLinks">
+                <td width="900" style="border-bottom: 1px solid rgba(0, 0, 0, 0.06); border-top: 0px;">
+                  {{ oldlink.link }}
+                </td>
+                <td width="10">
+                  <a class="edit_material" (click)='edit_material(oldlink)'><i class="fa fa-pencil"></i></a>
+                </td>
+                <td width="10">
+                  <a class="del_material" (click)='del_material(oldlink)'><i class="fa fa-trash-o"></i></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div *ngIf="!is_superuser" class="help_material" style="display: flex;">
+            <p>HELPFUL MATERIAL:</p>
+            <table style="margin-left: 5%;">
+              <h5 *ngFor="let exitlink of oldLinks"><a href="{{ exitlink.link }}"
+                  target="_bland">{{ exitlink.link }}</a></h5>
+            </table>
+          </div>
+          <div class="sel-duration flex-left">
+            <p>DURATION:</p>
+            <img src="../../../assets/img/calendar-flat.png" for="courseDate" alt="">
+            <input *ngIf="is_superuser" [(ngModel)]="course.deadline" class="form-control" name="deadline" style="text-align: center; width: 50px;">
+            <strong *ngIf="!is_superuser" class="duration" style="margin: 0 10px;">{{ course.deadline? course.deadline: '' }}</strong>
+            <strong> days</strong>
+          </div>
+          <div>
+            <button *ngIf="is_superuser" type="submit" (click)="onSubmit()" id="course-save" class="btn btn-success"
+              style="float: right;">Save</button>
+          </div>
+        </li>
+      </ol>
+  </div>
+</section>

@@ -1,0 +1,133 @@
+.card-profile {
+  padding: 0 50px;
+}
+.card-profile .card-avatar {
+  margin: -50px 30px 0 20px;
+}
+.flex-left {
+  display: flex;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.col-6 > h6 {
+  width: 80%;
+}
+.card-body .about-me h6 {
+  width: 100%;
+}
+.card-body .about-me textarea {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600');
+
+body {
+  font-family: 'Muli', sans-serif;
+  background: #F5F5F6;
+}
+
+.custom-wrapper {
+  max-width: 460px;
+  margin: 0 auto 150px;
+}
+
+.h2,
+h2 {
+  font-size: 1.45rem;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 10px auto 30px;
+}
+
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 19px;
+  z-index: 1;
+  top: 13px;
+}
+
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+
+.avatar-upload .avatar-edit .custom-label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #3efc78;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit .upload-image {
+  background: #3efc78;
+}
+
+.avatar-upload .avatar-edit .remove-image {
+  background: #E91E63;
+}
+
+.avatar-upload .avatar-edit .custom-label:hover {
+  opacity: 1;
+}
+
+.avatar-upload .avatar-edit .custom-label:after {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  top: 8px;
+  right: 0;
+  left: 2px;
+  width: 18px;
+}
+
+.avatar-upload .avatar-edit .upload-image:after {
+  content: url('/assets/edit.svg');
+}
+
+.avatar-upload .avatar-edit .remove-image:after {
+  content: url('/assets/close.svg');
+  left: 0px !important;
+}
+
+.avatar-upload .avatar-preview {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 12px solid #fff;
+  -webkit-box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+.avatar-upload .avatar-preview>div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

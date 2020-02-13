@@ -1,0 +1,117 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button  type="button" class="btn btn-outline-primary" (click)="open(content)"> Add Deliverable </button>
+  </nav>
+  <div class="deliverables">
+    <div class="row">
+      <div *ngFor="let deliverable of deliverables" class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card card-stats">
+            <div class="card-header card-header-warning card-header-icon">
+              <div class="card-icon">
+                  <i class="material-icons">{{deliverable.icon}}</i>
+              </div>
+              <br>
+              <h3 class="card-title">{{deliverable.title}}</h3>
+              <p class="card-category">{{deliverable.pipeline}}</p>
+            </div>
+            <div class="container">
+                <h6><b class="bold">Instructions:</b> {{deliverable.description}}</h6>
+                <div class="text-center">
+                  <h6><b class="bold">Download file:</b></h6>
+                  <a href="{{deliverable.template}}">{{deliverable.title}} Template</a>
+                </div>
+            </div>
+            <br>
+            <div class="card-footer" style="border-top: 1px solid #eee;">
+              <div class="stats">
+                <h6><strong>Released:</strong>&nbsp;{{deliverable.release_date | date: 'dd/MM/yyyy'}}</h6>
+              </div>
+              <div class="stats">
+                <button class="delete" title="delete deliverable" type="button" class="btn btn-link"
+                (click)="delete(deliverable)">Delete</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add new deliverable</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <form (ngSubmit)="onSubmit()" #deliverableForm="ngForm">
+          <div class="form-group">
+            <input type="text"
+                   class="form-control"
+                   id="name"
+                   [(ngModel)]="deliverable.title"
+                   name="name"
+                   placeholder="Deliverable Title"
+                   required>
+          </div>
+          <div class="form-group">
+            <input type="text"
+                   class="form-control"
+                   id="pipeline"
+                   [(ngModel)]="deliverable.pipeline"
+                   name="pipeline"
+                   placeholder="Pipeline"
+                   required>
+          </div>
+          <div class="form-group">
+            <h6>Choose a material icon from <a href="https://material.io/tools/icons/?style=baseline">material.io/tools/icons</a> and write its name.</h6>
+            <input type="text"
+                   class="form-control"
+                   id="icon"
+                   [(ngModel)]="deliverable.icon"
+                   name="icon"
+                   placeholder="material icon"
+                   required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control"
+                      rows="5"
+                      id="tag_line"
+                      [(ngModel)]="deliverable.description"
+                      name="tag_line"
+                      placeholder="Instructions">
+              </textarea>
+          </div>
+          <div class="text-center" *ngIf="">
+                <h6 *ngIf="message"><b class="bold">{{message}}</b></h6>
+                <h6><b class="bold">Upload a PDF file:</b></h6>
+                <div>
+                  <span class="btn btn-outline-primary btn-file">
+                    Upload <input name="file" type="file" accept="application/pdf" (change)="handleInputChange($event)">
+                  </span>
+                </div>
+                <div *ngFor="let template of templates">
+                  <h6>{{template}}</h6>
+                </div>
+          </div>
+          <div class="text-center">
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </form>
+        </div>
+  </div>
+  </div>
+</ng-template>

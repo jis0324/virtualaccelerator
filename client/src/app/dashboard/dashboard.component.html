@@ -1,0 +1,65 @@
+<div *ngIf="is_superuser" class="dashboard_component">
+  <div class="container-fluid" style="display: flex;">
+    <div class="coaches-card">
+      <a [routerLink]="['/coach']">
+        <div class="card">
+          <div class="card-header flex-left">
+            <div class="card-img">
+              <img class="img-fluid" src="../../assets/img/coach.png" alt="Card image cap">
+            </div>
+          <h3>{{ coachNum ? coachNum.length : '0' }} coaches</h3>
+          </div>
+          <div class="card-content" style="text-align: right;">
+            <h5>{{ hasNotCommentTeamDel }} feedback open</h5>
+          </div>
+          <div class="card-footer" style="border-top: 1px solid #eee;">
+            <div class="stats" *ngIf="coaches"><p class="total-font">{{coaches.length}} coaches total</p> </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="teams-card">
+      <a [routerLink]="['/teams']">
+        <div class="card">
+          <div class="card-header flex-left">
+            <div class="card-img">
+              <img class="img-fluid" src="../../assets/img/group.png" alt="Card image cap">
+            </div>
+          <h3 *ngIf="hasDeliverableTeams">{{ hasDeliverableTeams }} teams </h3>
+          <h3 *ngIf="!hasDeliverableTeams">0 teams </h3>
+          </div>
+          <div class="card-content" style="text-align: right;">
+            <h5 *ngIf="teamDeliverables">{{ openedTeamDeliverables }} deliverables open</h5>
+            <h5 *ngIf="!teamDeliverables">0 deliverables open</h5>
+          </div>
+          <div class="card-footer" style="border-top: 1px solid #eee;">
+            <p *ngIf="teams" class="stats total-font">{{ teams.length }} teams total </p>
+            <p *ngIf="!teams" class="stats total-font">0 teams total </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="deliverables-card">
+      <a [routerLink]="['/course']">
+        <div class="card">
+          <div class="card-header flex-left">
+            <div class="card-img">
+              <img class="img-fluid" src="../../assets/img/deliverable.png" alt="Card image cap">
+            </div>
+          <h3 *ngIf="deliverables">{{ deliverables.length }} courses</h3>
+          </div>
+          <div class="card-content" style="text-align: right;">
+            <h5></h5>
+          </div>
+          <div class="card-footer" style="border-top: 1px solid #eee;">
+            <div class="stats"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</div>

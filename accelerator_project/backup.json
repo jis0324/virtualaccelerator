@@ -1,0 +1,3700 @@
+[
+{
+    "model": "vap.team",
+    "pk": 1,
+    "fields": {
+        "name": "hom-e",
+        "photo": "img/1.png",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 2,
+        "date_of_entry": "2019-02-23",
+        "website": "www.hom-e.gr",
+        "coorporate_existance": false,
+        "tag_line": "\u0392\u03c1\u03b5\u03c2 \u03c4\u03bf \u03c3\u03c0\u03af\u03c4\u03b9 \u03c0\u03bf\u03c5 \u03c3\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9!"
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 2,
+    "fields": {
+        "name": "Cargo Share",
+        "photo": "img/3.png",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 4,
+        "date_of_entry": "2019-02-23",
+        "website": "www.cargo.gr",
+        "coorporate_existance": true,
+        "tag_line": "Make love not war!"
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 3,
+    "fields": {
+        "name": "Inagros",
+        "photo": "img/2.png",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 5,
+        "date_of_entry": "2019-02-23",
+        "website": "www.inagros.gr",
+        "coorporate_existance": true,
+        "tag_line": ""
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 4,
+    "fields": {
+        "name": "Book4Share",
+        "photo": "",
+        "pipeline": "Ennovation",
+        "research_stream": true,
+        "maturity_level": 2,
+        "date_of_entry": "2019-02-19",
+        "website": "www.book4share.gr",
+        "coorporate_existance": false,
+        "tag_line": "Read, read, read.."
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 5,
+    "fields": {
+        "name": "yayaka",
+        "photo": "img/yayaka_logo_9fhcMvK.png",
+        "pipeline": "Athens Startup Weekend",
+        "research_stream": false,
+        "maturity_level": 4,
+        "date_of_entry": "2019-02-23",
+        "website": "www.yayaka.gr",
+        "coorporate_existance": false,
+        "tag_line": "\u03a6\u03c1\u03bf\u03bd\u03c4\u03af\u03b6\u03bf\u03c5\u03bc\u03b5 \u03b1\u03c5\u03c4\u03bf\u03cd\u03c2 \u03c0\u03bf\u03c5 \u03bc\u03b1\u03c2 \u03c6\u03c1\u03cc\u03bd\u03c4\u03b9\u03b6\u03b1\u03bd."
+    }
+},
+{
+    "model": "vap.team",
+    "pk": 11,
+    "fields": {
+        "name": "Rollong",
+        "photo": "",
+        "pipeline": "ennovation",
+        "research_stream": false,
+        "maturity_level": 5,
+        "date_of_entry": "2019-02-25",
+        "website": "www.rolling.com",
+        "coorporate_existance": false,
+        "tag_line": ""
+    }
+},
+{
+    "model": "vap.deliverable",
+    "pk": 1,
+    "fields": {
+        "title": "Team Manifesto",
+        "description": "This document is a guideline, which will help to summarise all the team\u2019s vision, goals, expectations and culture. We strongly advise you to carefully go through all points below stated, discussion each one among the team members, before writing down.",
+        "release_date": "2019-02-23",
+        "pipeline": "Ennovation",
+        "template": "deliverables/01_-_Team_Manifesto.docx",
+        "icon": "group"
+    }
+},
+{
+    "model": "vap.deliverable",
+    "pk": 2,
+    "fields": {
+        "title": "Market Validation",
+        "description": "At its heart, market validation is the process of finding out \u2013 before you spend money and time on the business \u2013 whether the market has any space for your idea. If your idea is solving a real problem then is it worth the time, effort, and heartburn.",
+        "release_date": "2019-02-25",
+        "pipeline": "Ennovation",
+        "template": "deliverables/Ennovation_2nd_Phase_Template.docx",
+        "icon": "store"
+    }
+},
+{
+    "model": "vap.deliverable",
+    "pk": 3,
+    "fields": {
+        "title": "Business plan",
+        "description": "A business plan is a written document that describes in detail how a business, usually a new one, is going to achieve its goals. A business plan lays out a written plan from a marketing, financial and operational viewpoint.",
+        "release_date": "2019-02-25",
+        "pipeline": "Ennovation",
+        "template": "deliverables/Business_Plan_HT.pdf",
+        "icon": "feedback"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 1,
+    "fields": {
+        "deliverable": 1,
+        "team": 1,
+        "deadline": "2019-02-18",
+        "status": true,
+        "file": "teamdeliverables/ca86a4d8-009.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 2,
+    "fields": {
+        "deliverable": 2,
+        "team": 3,
+        "deadline": "2019-02-28",
+        "status": true,
+        "file": "teamdeliverables/\u03a0\u03b5\u03c1\u03b9\u03b5\u03c7\u03cc\u03bc\u03b5\u03bd\u03b1_4sze7WH.odt"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 3,
+    "fields": {
+        "deliverable": 3,
+        "team": 1,
+        "deadline": "2019-02-26",
+        "status": true,
+        "file": "teamdeliverables/c93b0910-46f.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 4,
+    "fields": {
+        "deliverable": 1,
+        "team": 2,
+        "deadline": "2019-02-12",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 5,
+    "fields": {
+        "deliverable": 2,
+        "team": 2,
+        "deadline": "2019-02-23",
+        "status": true,
+        "file": "teamdeliverables/01_-_Team_Manifesto_DVfmCo1.docx"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 6,
+    "fields": {
+        "deliverable": 3,
+        "team": 2,
+        "deadline": "2019-03-30",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 7,
+    "fields": {
+        "deliverable": 1,
+        "team": 3,
+        "deadline": "2019-02-23",
+        "status": true,
+        "file": "teamdeliverables/01_-_Team_Manifesto_tTBEsoa.docx"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 8,
+    "fields": {
+        "deliverable": 1,
+        "team": 4,
+        "deadline": "2019-03-01",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 9,
+    "fields": {
+        "deliverable": 2,
+        "team": 4,
+        "deadline": "2019-02-19",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 10,
+    "fields": {
+        "deliverable": 3,
+        "team": 4,
+        "deadline": "2019-02-28",
+        "status": true,
+        "file": "teamdeliverables/01_-_Team_Manifesto.docx"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 11,
+    "fields": {
+        "deliverable": 1,
+        "team": 5,
+        "deadline": "2019-03-30",
+        "status": true,
+        "file": "teamdeliverables/Untitled.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 12,
+    "fields": {
+        "deliverable": 2,
+        "team": 1,
+        "deadline": "2019-03-29",
+        "status": true,
+        "file": "teamdeliverables/44982714-08b.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 13,
+    "fields": {
+        "deliverable": 2,
+        "team": 5,
+        "deadline": "2019-03-30",
+        "status": true,
+        "file": "teamdeliverables/0d9bff92-643.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 14,
+    "fields": {
+        "deliverable": 3,
+        "team": 5,
+        "deadline": "2019-02-24",
+        "status": true,
+        "file": "teamdeliverables/f6d78864-e29.pdf"
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 15,
+    "fields": {
+        "deliverable": 3,
+        "team": 3,
+        "deadline": "2019-03-21",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 24,
+    "fields": {
+        "deliverable": 1,
+        "team": 11,
+        "deadline": "2019-02-25",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 25,
+    "fields": {
+        "deliverable": 2,
+        "team": 11,
+        "deadline": "2019-02-26",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.teamdeliverable",
+    "pk": 26,
+    "fields": {
+        "deliverable": 3,
+        "team": 11,
+        "deadline": "2019-02-27",
+        "status": false,
+        "file": ""
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 1,
+    "fields": {
+        "teamdeliverable": 1,
+        "coach": 3,
+        "text": "Excellent work! Well done guys!",
+        "date": "2019-02-20"
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 2,
+    "fields": {
+        "teamdeliverable": 2,
+        "coach": 3,
+        "text": "You have to make further research.",
+        "date": "2019-02-20"
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 4,
+    "fields": {
+        "teamdeliverable": 1,
+        "coach": 4,
+        "text": "Good!",
+        "date": "2019-02-21"
+    }
+},
+{
+    "model": "vap.comment",
+    "pk": 20,
+    "fields": {
+        "teamdeliverable": 4,
+        "coach": 4,
+        "text": "Do you need any help?",
+        "date": "2019-02-25"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$NDPKZfDqWTCL$usKlHQAFMEaFVO3W6RdQENZRPvxkAhpwhGi4SzFzwFA=",
+        "last_login": "2019-02-19T18:21:58.975Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "kmpatziakoudi@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-11-19T18:13:03.554Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$HQ1h7Bgfsta0$ATIuTyG1mXOc/ICpOlvm0xebGV3WvreiKszEwsIu0Fg=",
+        "last_login": "2019-02-19T16:59:00.307Z",
+        "is_superuser": false,
+        "username": "katerina",
+        "first_name": "Katerina",
+        "last_name": "Mpatziakoudi",
+        "email": "kmpatziakoudi@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-17T14:48:10Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$ViKKhWxuMfS5$fmKyjUa7lcTO+yUzvmyr999kWdw/BQvGlX08/nGz7ss=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "akaragiannaki",
+        "first_name": "Angeliki",
+        "last_name": "Karagiannaki",
+        "email": "akaragiannaki@aueb.gr",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:17:44Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$1QmJJl8iazZC$qOQ0nqaKvUtLRLGNveJ+HCSfbhF4ivNQFGWQZtX/gws=",
+        "last_login": "2019-02-19T15:09:09.270Z",
+        "is_superuser": false,
+        "username": "mgalani",
+        "first_name": "Marianna",
+        "last_name": "Galani",
+        "email": "mgalani@aueb.gr",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:20:40Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$XoBcN4N3eCGU$Um9L8kgrFv9zFwOwtpFN8BQlEuxk7Pa1a1j/85WS1qw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "spetropoulos",
+        "first_name": "Stefanos",
+        "last_name": "Petropoulos",
+        "email": "spetropoulos@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:21:47Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$I1iLzdCA1vd5$lUVjqUM3q7iQC4ug4ubWQaPmAaIb+o/91hQHsbdueJ0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "tanogeianaki",
+        "first_name": "Theonymphi",
+        "last_name": "Anogeianaki",
+        "email": "tanogeianaki@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:23:25Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$Iwc6bqL0zP3m$uE+LiV7WaGPahs0FnxaIVUk1NNVbs0ukRXpgD4bxAdQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "cfragkedaki",
+        "first_name": "Claire",
+        "last_name": "Fragkedaki",
+        "email": "cfragkedaki@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-18T12:25:02Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$120000$sp4ZKjzGgAnR$x7OipQ3aiuDT6TxdaIMHTsXsodcOHLXINRI/HXn10mo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jbatas",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-02-19T18:24:23Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "24uoedvwdegb0dcrwhjp39zokxkzt8hu",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-03T18:13:47.842Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "458kzqz7hm8uoipegjxc9xmvj0awp64f",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-23T15:36:06.690Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "63cmnfcxht793atia1vjpwt8ywq79b2n",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-20T21:52:06.611Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dor79ls17wszo5l9eup76aex1smyafnb",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2019-01-15T15:01:35.800Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qyvedspty64l3czm8cfneubu9p8b9lb4",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2019-03-05T18:21:58.991Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yfl6c0g3fqmlxneqs6g9nqc8xx1p30b8",
+    "fields": {
+        "session_data": "ZGQyZGQxNDQzOTJhNjk2NzNjMTBiM2FkNDQxNWJkNjE0MWNiMjJhODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlZDJkZTM3NjM5MDU3NGQ5MmY0MjNmZjdjMTM4OGM3NWQzNzM1OTM3In0=",
+        "expire_date": "2018-12-20T21:52:06.803Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-11-19T18:16:09.887Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "1",
+        "object_repr": "Rachel Green",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-11-19T18:16:13.740Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-11-19T18:16:41.469Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-11-20T18:38:15.537Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "inagros",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2018-11-20T18:51:58.521Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "2",
+        "object_repr": "Ross Geler",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2018-11-20T18:52:16.720Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Cargo Share",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2018-11-20T18:52:59.247Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "inagros",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\", \"tag_line\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2018-11-20T18:57:00.219Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "lacasa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2018-11-20T18:57:25.997Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "3",
+        "object_repr": "Tokio",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2018-11-20T18:58:34.791Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "4",
+        "object_repr": "Berlin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2018-11-20T18:59:16.659Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "5",
+        "object_repr": "Rio",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2018-11-20T19:00:12.867Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "6",
+        "object_repr": "Claire Fragkedaki",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2018-11-20T19:02:18.014Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "7",
+        "object_repr": "Theonymfi Anog",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2018-11-20T19:03:21.169Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "8",
+        "object_repr": "Maria Papadopoulou",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2018-11-20T19:03:47.394Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "9",
+        "object_repr": "Giorgos",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2018-11-20T19:05:45.453Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "10",
+        "object_repr": "Joe Tribiani",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2018-11-20T19:07:40.369Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "11",
+        "object_repr": "Phoebe Buffay",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2018-11-20T19:08:33.409Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "12",
+        "object_repr": "Chandler Bing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2018-11-20T19:17:02.724Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"milestone\", \"object\": \"1.abc\"}}, {\"added\": {\"name\": \"milestone\", \"object\": \"2.def\"}}, {\"added\": {\"name\": \"milestone\", \"object\": \"3.ghi\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2018-11-20T19:18:06.683Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Research",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"milestone\", \"object\": \"1.jkl\"}}, {\"added\": {\"name\": \"milestone\", \"object\": \"2.mno\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2018-11-20T19:20:07.099Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Technology",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"milestone\", \"object\": \"1.opq\"}}, {\"added\": {\"name\": \"milestone\", \"object\": \"1.rst\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2018-11-20T19:21:28.771Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Validation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"milestone\", \"object\": \"1.uvw\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2018-11-20T19:23:20.785Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "5",
+        "object_repr": "Financial analysis",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"milestone\", \"object\": \"1.abcd\"}}, {\"added\": {\"name\": \"milestone\", \"object\": \"2.efgh\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2018-11-20T19:30:03.446Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "10",
+        "object_repr": "2.efgh",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"2.efgh 1. asdfghjkl\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2018-11-20T19:30:14.675Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "9",
+        "object_repr": "1.abcd",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"1.abcd 2. qwertyuiop\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2018-11-20T19:30:28.273Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "8",
+        "object_repr": "1.uvw",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"1.uvw 1. asdfghjklasdfghjkl\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2018-11-20T19:30:44.423Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "7",
+        "object_repr": "1.rst",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"1.rst 1. asdfghjkljkl\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2018-11-20T19:31:13.401Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "6",
+        "object_repr": "1.opq",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"1.opq 1. zxcvbnmbnm\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2018-11-20T19:31:25.386Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "5",
+        "object_repr": "2.mno",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"2.mno 1. asdfgasdfghjk\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2018-11-20T19:31:37.357Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "3",
+        "object_repr": "3.ghi",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"3.ghi 1. qwertyuiopuio\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2018-11-20T19:31:47.311Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "4",
+        "object_repr": "1.jkl",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"1.jkl 1. zxcvbnmxcvbn\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2018-11-20T19:31:58.161Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "3",
+        "object_repr": "3.ghi",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"3.ghi 2. zxcvbnxcvbnm\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2018-11-20T19:32:08.084Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "2",
+        "object_repr": "2.def",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"2.def 1. zxcvbnvbn\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2018-11-20T19:32:16.460Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "milestone"
+        ],
+        "object_id": "1",
+        "object_repr": "1.abc",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"question\", \"object\": \"1.abc 1. zxcvbnmsdfgh\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2018-11-20T19:33:42.988Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2018-11-20T19:35:53.488Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "answer"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto hom-e 2.efgh 1. asdfghjkl \u201cHe allowed himself to be swayed by his conviction that human beings are not born once and for all on the day their mothers give birth to them, but that life o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2018-11-20T19:36:46.268Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "comment"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto hom-e 2.efgh 1. asdfghjkl \u201cHe allowed himself to be swayed by his conviction that human beings are not born once and for all on the day their mothers give birth to them, but that life o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2018-11-20T19:37:24.065Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "commentanswer"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto hom-e 2.efgh 1. asdfghjkl \u201cHe allowed himself to be swayed by his conviction that human beings are not born once and for all on the day their mothers give birth to them, but that life o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2019-01-01T15:10:52.110Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "5",
+        "object_repr": "Rio",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2019-01-03T14:37:22.292Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}, {\"added\": {\"name\": \"milestone\", \"object\": \"4.Work-flow Management Agreement\"}}, {\"added\": {\"name\": \"milestone\", \"object\": \"5.Founder\\u2019s (Intellectual Property) Agreement\"}}, {\"changed\": {\"name\": \"milestone\", \"object\": \"1.Team Vision\", \"fields\": [\"title\"]}}, {\"changed\": {\"name\": \"milestone\", \"object\": \"2.Team Profile & Roles\", \"fields\": [\"title\"]}}, {\"changed\": {\"name\": \"milestone\", \"object\": \"3.Team Expectations and Commitment Level\", \"fields\": [\"title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2019-01-03T14:38:12.719Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "11",
+        "object_repr": "1.Team Vision 1. \u2022\tWhat the team\u2019s goal / What are you trying to achieve (during the Course timeframe and beyond)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2019-01-03T14:38:41.331Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "12",
+        "object_repr": "2.Team Profile & Roles 2. Describe the team member\u2019s profile, including academic background, professional experience, know-how and skills that are relevant for the project;",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2019-01-03T14:39:04.246Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "13",
+        "object_repr": "2.Team Profile & Roles 3. Name a person to be responsible for scheduling meetings, and uploading deliverables to the platform.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2019-01-03T14:39:30.692Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "14",
+        "object_repr": "3.Team Expectations and Commitment Level 1. Agree upon the amount of hours per week each team member will commit to the startup proposal",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2019-01-03T14:40:57.004Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "15",
+        "object_repr": "3.Team Expectations and Commitment Level 2. Define a time schedule of week-days and time slots each team member will allocate to the program, making sure you have at least 1-2h per week of overlap amo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2019-01-03T14:41:26.024Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "16",
+        "object_repr": "3.Team Expectations and Commitment Level 3. Make sure you clarify if there will be any idle period (e.g. university exam week or pre-planned vacation) and define how and when the team member should co",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2019-01-03T14:42:37.625Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "17",
+        "object_repr": "4.Work-flow Management Agreement 1. \u2022\tClarify the work process by defining how you will collaborate within documents and ensure a common understanding of scope, timeline, outcomes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2019-01-03T14:44:57.945Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "18",
+        "object_repr": "4.Work-flow Management Agreement 2. Assign who is responsible for setting up each platform and creating the initial working documents;",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2019-01-03T14:46:02.638Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "19",
+        "object_repr": "5.Founder\u2019s (Intellectual Property) Agreement 1. \u2022\tInitial agreement regarding intellectual property of content that is created during the program and alignments for specific future scenarios.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2019-01-03T14:55:35.353Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "7",
+        "object_repr": "3.Team Expectations and Commitment Level 1. qwertyuiopuio",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2019-01-03T14:55:43.409Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "10",
+        "object_repr": "2.Team Profile & Roles 1. zxcvbnvbn",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2019-01-03T14:55:53.112Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "question"
+        ],
+        "object_id": "9",
+        "object_repr": "3.Team Expectations and Commitment Level 2. zxcvbnxcvbnm",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2019-01-03T20:41:27.790Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\", \"delivery_day\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2019-01-03T20:41:50.752Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Research hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2019-01-03T20:42:22.399Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Technology hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2019-01-03T20:42:56.458Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Validation hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2019-01-03T20:49:09.325Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "5",
+        "object_repr": "Financial analysis hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2019-01-03T20:49:31.137Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "6",
+        "object_repr": "Team Manifesto inagros",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2019-01-03T20:50:16.564Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "7",
+        "object_repr": "Team Manifesto hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2019-01-03T20:50:50.899Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto hom-e",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2019-02-12T16:01:43.464Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2019-02-12T16:02:00.441Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "inagros",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2019-02-12T16:02:21.379Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Cargo Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2019-02-12T16:02:48.048Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "la Casa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2019-02-12T20:51:41.489Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "la Casa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2019-02-12T20:51:58.009Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "la Casa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2019-02-12T20:52:06.501Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "la Casa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2019-02-12T20:52:20.297Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "inagros",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2019-02-12T20:52:32.859Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Cargo Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2019-02-12T20:52:54.173Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2019-02-13T14:58:40.296Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"pipeline\", \"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2019-02-13T14:59:40.952Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Research",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"pipeline\", \"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2019-02-13T14:59:54.729Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Technology",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2019-02-13T15:04:09.649Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Business",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"pipeline\", \"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2019-02-13T15:04:38.914Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "5",
+        "object_repr": "Financial analysis",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2019-02-13T15:04:55.862Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Business plan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2019-02-13T15:38:14.416Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Business plan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2019-02-14T17:02:34.445Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Research",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"icon\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2019-02-14T17:03:00.593Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Business plan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"icon\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2019-02-14T21:13:41.444Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "7",
+        "object_repr": "Team Manifesto hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2019-02-15T16:33:51.439Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "6",
+        "object_repr": "Team Manifesto inagros",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2019-02-17T14:48:11.025Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "katerina",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2019-02-17T14:49:27.349Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "katerina",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.161Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "41",
+        "object_repr": "Tony Stark",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.265Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "39",
+        "object_repr": "Eleni Sotiriou",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.281Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "37",
+        "object_repr": "Jason",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.293Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "36",
+        "object_repr": "Afroditi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.301Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "35",
+        "object_repr": "John Snow",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.313Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "34",
+        "object_repr": "John Snow",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.325Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "12",
+        "object_repr": "Chandler Bing",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.333Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "11",
+        "object_repr": "Phoebe Buffay",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.345Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "10",
+        "object_repr": "Joe Tribiani",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.357Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "9",
+        "object_repr": "Giorgos",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.369Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "8",
+        "object_repr": "Maria Papadopoulou",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.381Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "7",
+        "object_repr": "Theonymfi Anogianaki",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.393Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "Claire Fragkedaki",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.403Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "Ross Geler",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2019-02-18T11:42:43.411Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "Rachel Green",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2019-02-18T12:17:44.539Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "akaragiannaki",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2019-02-18T12:18:53.056Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "akaragiannaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2019-02-18T12:20:40.408Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "mgalani",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2019-02-18T12:21:10.794Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "mgalani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2019-02-18T12:21:47.874Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "spetropoulos",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2019-02-18T12:22:32.172Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "spetropoulos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2019-02-18T12:23:26.275Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "tanogeianaki",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2019-02-18T12:23:57.445Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "tanogeianaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2019-02-18T12:25:03.207Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "7",
+        "object_repr": "cfragkedaki",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2019-02-18T12:25:44.890Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "7",
+        "object_repr": "cfragkedaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2019-02-18T12:27:12.959Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "3",
+        "object_repr": "Coach object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2019-02-18T12:27:55.842Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "4",
+        "object_repr": "Coach object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2019-02-18T12:29:38.837Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2019-02-18T12:31:18.871Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Validation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2019-02-18T12:33:42.406Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Business plan",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2019-02-18T12:33:53.902Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Validation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"icon\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2019-02-18T12:34:58.104Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "Hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2019-02-18T12:36:19.359Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "Cargo Share",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2019-02-18T12:36:56.394Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Inagros",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2019-02-18T12:37:56.736Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto Hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2019-02-18T12:38:09.894Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Validation Hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2019-02-18T12:38:26.716Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Business plan Hom-e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2019-02-18T12:38:44.770Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "4",
+        "object_repr": "Team Manifesto Cargo Share",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2019-02-18T12:39:00.662Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "5",
+        "object_repr": "Market Validation Cargo Share",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2019-02-18T12:40:24.732Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "7",
+        "object_repr": "TeamMember object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2019-02-18T12:40:59.908Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "6",
+        "object_repr": "TeamMember object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2019-02-18T13:05:06.838Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "7",
+        "object_repr": "Claire Fragkedaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2019-02-18T13:05:28.918Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "Theonymphi Anogeianaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2019-02-18T13:05:46.062Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2019-02-18T13:06:13.135Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "Angeliki Karagiannaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2019-02-18T14:33:50.740Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "7",
+        "object_repr": "Kleio Fragkedaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_team_member\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2019-02-18T14:33:56.848Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "Theonymphi Anogeianaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_team_member\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2019-02-18T14:34:03.410Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_coach\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2019-02-18T14:34:08.731Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "Angeliki Karagiannaki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_coach\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2019-02-19T10:07:24.393Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "katerina",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2019-02-19T10:08:54.321Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "Katerina Mpaztiakoudi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2019-02-19T10:11:46.550Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "Katerina Mpaztiakoudi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2019-02-19T10:12:22.408Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "2",
+        "object_repr": "Katerina Mpaztiakoudi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2019-02-19T18:24:23.654Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "8",
+        "object_repr": "jbatas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2019-02-19T18:24:31.445Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "8",
+        "object_repr": "jbatas",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2019-02-19T18:25:59.761Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teammember"
+        ],
+        "object_id": "8",
+        "object_repr": "john batas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2019-02-20T21:37:29.360Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "comment"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto Hom-e Marianna Galani Excellent work! Well done guys!",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2019-02-20T21:39:08.932Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "comment"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Validation Inagros Angeliki Karagiannaki You have to make further research.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2019-02-23T12:02:27.793Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "5",
+        "object_repr": "yayaka",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2019-02-23T12:06:00.962Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "5",
+        "object_repr": "yayaka",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2019-02-23T12:07:05.048Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Inagros",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2019-02-23T12:07:17.503Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2019-02-23T12:07:31.934Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "Cargo Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2019-02-23T12:08:01.602Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "Cargo Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2019-02-23T12:08:32.266Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "1",
+        "object_repr": "Team Manifesto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2019-02-23T12:09:49.777Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Validation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2019-02-23T12:10:16.810Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Business plan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"template\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2019-02-23T20:16:53.021Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "15",
+        "object_repr": "Business plan Inagros",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2019-02-23T20:17:10.788Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "14",
+        "object_repr": "Business plan yayaka",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2019-02-23T20:17:19.191Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "13",
+        "object_repr": "Market Validation yayaka",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2019-02-23T20:17:30.937Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "12",
+        "object_repr": "Market Validation hom-e",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2019-02-23T20:17:42.567Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "11",
+        "object_repr": "Team Manifesto yayaka",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2019-02-23T20:17:52.355Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "11",
+        "object_repr": "Team Manifesto yayaka",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2019-02-23T20:18:20.762Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "10",
+        "object_repr": "Business plan Book4Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\", \"delivery_day\", \"status\", \"file\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2019-02-23T20:18:44.333Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "7",
+        "object_repr": "Team Manifesto Inagros",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\", \"delivery_day\", \"status\", \"file\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2019-02-23T20:18:55.383Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "6",
+        "object_repr": "Business plan Cargo Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2019-02-23T20:19:12.055Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "5",
+        "object_repr": "Market Validation Cargo Share",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"deadline\", \"delivery_day\", \"status\", \"file\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2019-02-24T23:34:53.539Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "teamdeliverable"
+        ],
+        "object_id": "24",
+        "object_repr": "Team Manifesto Rollong",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2019-02-25T00:23:59.559Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2019-02-25T00:29:21.812Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2019-02-25T01:05:55.350Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2019-02-25T01:27:01.821Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "coach"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2019-02-25T01:34:12.718Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "Marianna Galani",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2019-02-25T12:52:48.510Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "3",
+        "object_repr": "Business plan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2019-02-25T12:54:27.042Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "vap",
+            "deliverable"
+        ],
+        "object_id": "2",
+        "object_repr": "Market Validation",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 2,
+    "fields": {
+        "user_ptr": 2,
+        "team": 1,
+        "role": "Developer",
+        "field": "Technology"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 6,
+    "fields": {
+        "user_ptr": 6,
+        "team": 1,
+        "role": "Developer",
+        "field": "Technology"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 7,
+    "fields": {
+        "user_ptr": 7,
+        "team": 1,
+        "role": "Developer",
+        "field": "Technology"
+    }
+},
+{
+    "model": "vap.teammember",
+    "pk": 8,
+    "fields": {
+        "user_ptr": 8,
+        "team": 5,
+        "role": "",
+        "field": ""
+    }
+},
+{
+    "model": "vap.coach",
+    "pk": 3,
+    "fields": {
+        "user_ptr": 3,
+        "job_title": "",
+        "organization": "ACEin",
+        "field": "Innovation"
+    }
+},
+{
+    "model": "vap.coach",
+    "pk": 4,
+    "fields": {
+        "user_ptr": 4,
+        "job_title": "Communication Manager",
+        "organization": "ACEin",
+        "field": "Innovation"
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 2,
+    "fields": {
+        "name": "Katerina Mpatziakoudi",
+        "email": "kmpatziakoudi@gmail.com",
+        "phone": "6976665375",
+        "is_coach": false,
+        "is_team_member": true
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 3,
+    "fields": {
+        "name": "Angeliki Karagiannaki",
+        "email": "akaragiannaki@aueb.gr",
+        "phone": "6978885624",
+        "is_coach": true,
+        "is_team_member": false
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 4,
+    "fields": {
+        "name": "Marianna Galani",
+        "email": "mgalani@aueb.gr",
+        "phone": "6987291089",
+        "is_coach": true,
+        "is_team_member": false
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 6,
+    "fields": {
+        "name": "Theonymphi Anogeianaki",
+        "email": "tanogeianaki@gmail.com",
+        "phone": "6987291078",
+        "is_coach": false,
+        "is_team_member": true
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 7,
+    "fields": {
+        "name": "Kleio Fragkedaki",
+        "email": "cfragkedaki@gmail.com",
+        "phone": "69476578787",
+        "is_coach": false,
+        "is_team_member": true
+    }
+},
+{
+    "model": "vap.user",
+    "pk": 8,
+    "fields": {
+        "name": "John Batas",
+        "email": "jbatas@gmail.com",
+        "phone": "687568970",
+        "is_coach": false,
+        "is_team_member": true
+    }
+}
+]

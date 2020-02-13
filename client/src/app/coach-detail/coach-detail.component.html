@@ -1,0 +1,132 @@
+<a href="/coach" class="btn btn-outline-primary" id="back"><i class="material-icons">keyboard_arrow_left</i>Back </a>
+<div class="content">
+  <div class="card card-nav-tabs">
+    <h4 class="card-header card-header-primary user-text click" style="font-weight:500;">
+      <b *ngIf="coach.name">{{ coach.name }}</b>
+    </h4>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- <img class="coach_img" src="{{ photo }}" height="140" width="140" style="display: block; margin: 0 30% 0 20%;"><br> -->
+          <div class="group-gap">
+
+            <!-- Upload image -->
+            <div class="avatar-upload">
+              <div class="avatar-preview">
+                <div id="imagePreview" [style.backgroundImage]="'url('+ photo +')'">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-left: 20%;">
+            <h6 *ngIf="coach.field"><strong>Position:</strong> {{coach.field}}</h6>
+            <h6 *ngIf="coach.job_title"><strong>Qualities:</strong> {{ coach.job_title }}</h6>
+            <h6 *ngIf="coach.organization"><strong>Years Exp in Ace:</strong> {{ coach.organization }}</h6>
+          </div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-8" style="margin-top:20px;">
+          <div>
+            <h3 style="margin-top: 0;">
+              <strong>BIO</strong>
+            </h3>
+            <h5 *ngIf="coach.about_me">{{coach.about_me}}</h5>
+          </div>
+          <h3 class="text-center" style="margin-top: 0;"><strong>TEAMS</strong></h3>
+          <div class="coach_teams">
+            <div *ngFor="let coachTeam of coachTeams">
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; letter-spacing: 5px; margin: 20px auto 0 auto; width: 70%;">
+                <h3 style="margin: 0;">{{coachTeam.name}}</h3>
+                <button class="btn" (click)="deleteTeam(coachTeam)">DELETE</button>
+              </div>
+              <hr>
+            </div>
+            <div *ngIf="!coachTeams.length" class="text-center">
+              <h6>This Coach hasn't got any team yet. Please add team to this coach.
+              </h6>
+            </div>
+            <div *ngIf="is_superuser" class="text-center">
+              <button type="button" class="btn btn-outline-primary" (click)="open(content)" style="padding: 10px 20px;">
+                add team </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="coachTeams && coachTeams.length > 0" class="card card-nav-tabs" style="margin-top: 100px;">
+      <h4 class="card-header card-header-primary user-text click" style="font-weight:500;">
+        <b class="">Feedback</b>
+      </h4>
+      <div class="card-body">
+        <section id="tabs">
+          <div class="row text-left">
+            <div class="col-md-12 col-lg-12">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-body">
+                    <ngb-tabset type="pills" class="ngb-tabset" [orientation]="currentOrientation">
+                      <ngb-tab *ngFor="let coachTeam of coachTeams" title="{{coachTeam.name}}">
+                        <ng-template ngbTabContent>
+                          <div *ngFor="let teamdeliverable of coachTeam.temp" style="display: flex; align-items: center; height: auto; padding: 20px;">
+                            <p>{{  teamdeliverable.deliverable.title }}</p>
+                            <img src={{get_image_name(teamdeliverable)}} class="material-icons" alt="teamDeliverable.deliverable.title" />
+                            <img *ngIf="teamdeliverable.status" src="../../assets/img/teams/warning.png" class="material-icons"
+                              alt="teamDeliverable.deliverable.title" />
+                            <img *ngIf="!teamdeliverable.status && ! deliverable_color(teamdeliverable.deadline)"
+                              src="../../assets/img/teams/warning.png" class="material-icons"
+                              alt="teamDeliverable.deliverable.title" />
+                            <img *ngIf="!teamdeliverable.status && deliverable_color(teamdeliverable.deadline)"
+                              src="../../assets/img/teams/check.png" class="material-icons "
+                              alt="teamDeliverable.deliverable.title" />
+                            <span >{{ delayed_days }}</span>
+                          </div>
+        
+                          <p *ngIf="!coachTeam.temp || coachTeam.temp.length == 0" style="font-size: 20px;">This team has not any deliverable yet.</p>
+                        </ng-template>
+                      </ngb-tab>
+                    </ngb-tabset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Add new team</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <form (ngSubmit)="onSubmit()" #teamForm="ngForm">
+            <div *ngIf="teamsWithoutCoach?.length" class="form-group">
+              <label for="deliverable">Select team</label>
+              <select class="form-control" type="number" [(ngModel)]="addedTeam" name="team" id="team">
+                <option *ngFor="let teamWithoutCoach of teamsWithoutCoach" [ngValue]="teamWithoutCoach" selected>
+                  {{teamWithoutCoach.name}}
+                </option>
+              </select>
+            </div>
+            <div *ngIf="!teamsWithoutCoach?.length">
+              <p>There is no team to add.</p>
+            </div>
+            <br>
+            <div class="text-center">
+              <h6 *ngIf="message" style="color:#d81b60;"><strong>{{message}}</strong></h6>
+              <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </ng-template>

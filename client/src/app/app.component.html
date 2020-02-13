@@ -1,0 +1,71 @@
+<!-- When login is false -->
+<div *ngIf="!isLoggedIn">
+  <app-login></app-login>
+</div>
+<!-- When log in is true -->
+<div class="wrapper" *ngIf="isLoggedIn">
+  <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/plan.jpg" [ngClass]="{ 'active': navbarOpen }">
+    <div class="logo">
+      <a href="" class="simple-text logo-normal" style="font-family: 'Lobster', cursive;"><img src="../assets/img/startup.svg" onerror="this.onerror=null; this.src='startup.png'" style="height:30px; width:30px;">Accelerator</a>
+    </div>
+    <div class="sidebar-wrapper">
+      <div class="logo row">
+        <a *ngIf="userdata?.is_superuser" class="user-text" style="font-weight:500;">SUPERVISOR</a>
+        <a *ngIf="profile?.is_coach"  class="user-text" style="font-weight:500;">COACH</a>
+        <a *ngIf="profile?.is_team_member" class="user-text" style="font-weight:500;">TEAM MEMBER</a>
+        <a  class="user-text" style="font-weight:500;">{{userdata.username}}</a>
+      </div>
+      <ul class="nav mr-auto">
+        <li *ngIf="userdata?.is_superuser" class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/dashboard">
+            <i class="material-icons">dashboard</i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+        <li *ngIf="userdata?.is_superuser" class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/coach">
+            <i class="material-icons">assignment</i>
+            <p>Coaches</p>
+          </a>
+        </li>
+        <li *ngIf="!userdata?.is_superuser" class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/users">
+            <i class="material-icons">assignment_ind</i>
+            <p>Profile</p>
+          </a>
+        </li>
+        <li *ngIf="profile?.is_coach || userdata?.is_superuser" class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/teams">
+            <i class="material-icons">group</i>
+            <p>Teams</p>
+          </a>
+        </li>
+        <!-- <li *ngIf="profile?.is_team_member" class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/teamdeliverables">
+            <i class="material-icons">assignment</i>
+            <p>Deliverables</p>
+          </a>
+        </li>
+        <li *ngIf="profile?.is_coach" class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/deliverables">
+            <i class="material-icons">assignment</i>
+            <p>Deliverables</p>
+          </a>
+        </li> -->
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/course">
+            <i class="material-icons">assignment_ind</i>
+            <p>Courses</p>
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <app-login></app-login>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-panel">
+    <router-outlet ></router-outlet>
+  </div>
+</div>

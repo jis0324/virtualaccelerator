@@ -1,0 +1,27 @@
+
+<div class="container" style="margin-top:100px;">
+  <div class="teamDeliverables" >
+    <div class="row">
+      <div *ngFor="let teamDeliverable of teamDeliverables" class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card card-stats">
+            <div class="card-header card-header-warning card-header-icon">
+              <div class="card-icon">
+                  <i class="material-icons">{{teamDeliverable.deliverable.icon}}</i>
+              </div>
+              <br>
+              <a [routerLink]="['/teamdeliverables/', teamDeliverable.id]"><h3 class="card-title">{{teamDeliverable.deliverable.title}}</h3></a>
+              <p class="card-category">{{teamDeliverable.deliverable.pipeline}}</p>
+            </div>
+            <div class="card-footer" style="border-top: 1px solid #eee;">
+              <div class="stats">
+                <h6><strong>Deadline:</strong>&nbsp;{{teamDeliverable.deadline | date: 'dd/MM/yyyy'}}</h6>
+              </div>
+              <div class="stats">
+                <h6 *ngIf="teamDeliverable.status"  style="color:#00cc99;">Submited!</h6>
+                <h6 *ngIf="!teamDeliverable.status && !deliverable_color(teamDeliverable.deadline)" style="color:#ff0066">Deadline is passed!</h6>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

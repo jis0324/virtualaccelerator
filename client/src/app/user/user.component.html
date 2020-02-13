@@ -1,0 +1,121 @@
+<div class="container-fluid content" *ngIf="is_coach">
+  <div class="row justify-content-center" style="margin:100px 50px auto 50px; border-radius: 50px;">
+    <div class="col-sm-12">
+      <div class="card card-profile">
+          <!-- Form starts -->
+          <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="flex-left">
+
+            <div class="group-gap" style="margin-top: -100px;">
+
+              <!-- Upload image -->
+              <div class="avatar-upload">
+                <div class="avatar-edit">
+                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput
+                    (change)="uploadFile($event)" />
+                </div>
+                <div class="avatar-preview">
+                  <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <h6 *ngIf="coach!==editCoach" class="card-category text-gray">Coach, {{coach?.name}} </h6>
+            <button *ngIf="coach===editCoach" type="submit" class="btn btn-danger btn-lg btn-block" (click)="fileInput.click()" style="width: 150px; padding: 10px 20px; margin: 0;">Upload Image</button>
+
+          </form><!-- Form ends -->
+
+        <div class="card-body">
+          <div *ngIf="is_coach" style="text-align:left;">
+            <div class="col-12 flex-between about-me" style="margin-top: 0;">
+              <h6>
+                <strong> About Me: </strong>
+                <textarea rows="5" *ngIf="coach!==editCoach" class="form-control"
+                  disabled>{{ coach.about_me }}</textarea>
+                <textarea rows="5" *ngIf="coach===editCoach" [(ngModel)]="coach.about_me"
+                  class="form-control">{{coach.about_me}}</textarea>
+              </h6>
+            </div>
+            <div class="flex-between">
+              <div class="col-6">
+                <h6>
+                  <strong> Name: </strong>
+                  <input *ngIf="coach!==editCoach" class="form-control" value="{{coach.name}}" disabled />
+                  <input *ngIf="coach===editCoach" [(ngModel)]="coach.name" class="form-control">
+                </h6>
+              </div>
+              <div class="col-6">
+                <h6>
+                  <strong>Email: </strong>
+                  <input *ngIf="coach!==editCoach" class="form-control" value="{{coach.email}}" disabled />
+                  <input *ngIf="coach===editCoach" [(ngModel)]="coach.email" class="form-control">
+                </h6>
+              </div>
+            </div>
+            <div class="flex-between">
+              <div class="col-6">
+                <h6>
+                  <strong>Phone: </strong>
+                  <input *ngIf="coach!==editCoach" class="form-control" value="{{coach.phone}}" disabled />
+                  <input *ngIf="coach===editCoach" [(ngModel)]="coach.phone" class="form-control">
+                </h6>
+              </div>
+              <div class="col-6">
+                <h6>
+                  <strong>Organization: </strong>
+                  <input *ngIf="coach!==editCoach" class="form-control" value="{{coach.organization}}" disabled />
+                  <input *ngIf="coach===editCoach" [(ngModel)]="coach.organization" class="form-control">
+                </h6>
+              </div>
+            </div>
+            <div class="flex-between">
+              <div class="col-6">
+                <h6>
+                  <strong> Field: </strong>
+                  <input *ngIf="coach!==editCoach" class="form-control" value="{{coach.field}}" disabled />
+                  <input *ngIf="coach===editCoach" [(ngModel)]="coach.field" class="form-control">
+                </h6>
+              </div>
+              <div class="col-6">
+                <h6>
+                  <strong>Job Title: </strong>
+                  <input *ngIf="coach!==editCoach" class="form-control" value="{{coach.job_title}}" disabled />
+                  <input *ngIf="coach===editCoach" [(ngModel)]="coach.job_title" class="form-control">
+                </h6>
+              </div>
+            </div>
+            <span class="coach-npassword-error" style="color: #ff0000; margin-top: 40px; text-align: center; display: block;"></span>
+            <div *ngIf="coach===editCoach" class="flex-between">
+              <!-- <div class="col-4">
+                <h6>
+                  <strong>Current Password: </strong>
+                  <input [(ngModel)]="coach.cpassword" class="form-control" type="password">
+                </h6>
+              </div> -->
+              <div class="col-6">
+                <h6>
+                  <strong>New Password: </strong>
+                  <input [(ngModel)]="passwordResetForm.npassword" class="form-control" type="password">
+                </h6>
+              </div>
+              <div class="col-6">
+                <h6>
+                  <strong>Confirm Password: </strong>
+                  <input [(ngModel)]="passwordResetForm.ncpassword" class="form-control confirm-password" type="password">
+                </h6>
+              </div>
+            </div>
+            <div style="float: right;" class="flex-between">
+              <button *ngIf="coach===editCoach" title="Save coach" (click)="updateCoach()" class="btn btn-circle"
+                style="background-color:#00cc99;"><i class="material-icons circle-icon">done</i></button>
+              <button *ngIf="coach!==editCoach" title="Edit coach" (click)="editCoachMethod(coach)"
+                class="btn btn-circle" style="background-color:#26c6da;"><i
+                  class="material-icons circle-icon">edit</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

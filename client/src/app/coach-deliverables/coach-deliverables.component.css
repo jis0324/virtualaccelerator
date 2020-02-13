@@ -1,0 +1,16 @@
+a {
+color:rgb(127, 140, 141);
+}
+
+a:hover {
+color: #c1e2fc;
+}
+
+.circle-icon {
+background: grey;
+color:white;
+border-radius: 50%;
+text-align: center;
+vertical-align: middle;
+padding: 10px;
+}
