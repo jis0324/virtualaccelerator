@@ -19,14 +19,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-SECRET_KEY = "(*ex_q+v(*0l*+j-$_88ijtyrmp)c9a@==np_2j^ylq3@qmlja"
+SECRET_KEY = ""
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-# '167.71.106.178',
-'localhost:8000',
-'localhost'
+    'localhost:8000',
 ]
 
 
@@ -81,24 +79,6 @@ WSGI_APPLICATION = 'accelerator_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'vap',
-#         'USER': 'vap_user',
-#         'PASSWORD': 'V@p2018V@p2018',
-#         'HOST': '127.0.0.1',
-#         'OPTIONS': {
-#             'isolation_level': 'read committed'
-#         }
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
